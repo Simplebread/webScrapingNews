@@ -1,6 +1,10 @@
 # Import necessary libraries
 from bs4 import BeautifulSoup
 import requests
+import pandas as pd
+
+# Create data list
+newsData = []
 
 # Create a variable to store RSS news link
 linkBBC = requests.get("https://feeds.bbci.co.uk/news/rss.xml").text
@@ -9,9 +13,17 @@ linkBBC = requests.get("https://feeds.bbci.co.uk/news/rss.xml").text
 soup = BeautifulSoup(linkBBC, "lxml-xml")
 
 # Filter and Sort
-titles = soup.find_all("title")
-descriptions = soup.find_all("description")
+items = soup.find_all("item")
 
-for title, description in zip(titles[2:], descriptions[1:]):
-    print(f"Title: {title.text}")
-    print(f"Description: {description.text}\n")
+# Output items
+for item in items:
+    newsData.append({
+        "title": item.title.text,
+        "date": item.pubDate.text,
+        "description": item.description.text,
+        "url": item.link.text
+    })
+
+# Convert data frame into csv
+df = pd.DataFrame(newsData)
+df.to_csv("bbc_news.csv", index=False, encoding='utf-8')
