@@ -2,28 +2,35 @@
 from bs4 import BeautifulSoup
 import requests
 import pandas as pd
+import rss_feeds as rf
 
 # Create data list
-newsData = []
-
-# Create a variable to store RSS news link
-linkBBC = requests.get("https://feeds.bbci.co.uk/news/rss.xml").text
-
-# Create soup and parse using lxml
-soup = BeautifulSoup(linkBBC, "lxml-xml")
-
-# Filter and Sort
-items = soup.find_all("item")
+news_data = []
 
 # Output items
-for item in items:
-    newsData.append({
-        "title": item.title.text,
-        "date": item.pubDate.text,
-        "description": item.description.text,
-        "url": item.link.text
-    })
+def filter_list(url, country, source):
+        # Request the RSS link
+        request_link = requests.get(url).text
+        # Create soup and parse using lxml
+        soup = BeautifulSoup(request_link, "lxml-xml")
+        # Filter and Sort
+        items = soup.find_all("item")
 
-# Convert data frame into csv
-df = pd.DataFrame(newsData)
-df.to_csv("bbc_news.csv", index=False, encoding='utf-8')
+        # Append items to the list
+        for item in items:
+            news_data.append({
+                "title": item.find("title").text if item.find("title") else "",
+                "date": item.find("pubDate").text if item.find("pubDate") else "",
+                "source": source,
+                "country": country,
+                "description": item.find("description").text if item.find("description") else "",
+                "url": item.find("link").text if item.find("link") else ""
+            })
+
+# Practice Output
+for feed in rf.rss_feeds:
+    filter_list(feed["url"],feed["country"],feed["source"])
+
+# Create data frame for CSV
+df = pd.DataFrame(news_data)
+df.to_csv("news.csv", index=False, encoding='utf-8')
