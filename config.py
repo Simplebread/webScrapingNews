@@ -23,5 +23,12 @@ rss_feeds = [{
     "url": "https://www.aljazeera.com/xml/rss/all.xml",
     "country": "Global",
     "source": "Al Jazeera"
+},
+{
+    "url": "https://abcnews.go.com/abcnews/topstories",
+    "country": "Global",
+    "source": "ABC"
 }
 ]
+
+# One list and one key and definition for manual: TRUE
