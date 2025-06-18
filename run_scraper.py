@@ -2,13 +2,14 @@
 import pandas as pd
 import config as config
 import parser as parser
+import filter as filter
 
 # Create Variable
 all_news = []
 
 # Practice Output
 for feed in config.rss_feeds:
-    results = parser.filter_list(feed["url"],feed["country"],feed["source"])
+    results = filter.filtered_list(feed["url"], feed["source"])
     all_news.extend(results)
 
 # Create data frame for CSV
