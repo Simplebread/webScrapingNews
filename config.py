@@ -1,55 +1,80 @@
 # RSS Links for news
-rss_feeds = [{
-    "url": "https://feeds.bbci.co.uk/news/rss.xml?edition=uk",
-    "country": "United Kingdom",
-    "source": "BBC",
-    "category": ""
-},
-{
-    "url": "https://feeds.bbci.co.uk/news/rss.xml?edition=us",
-    "country": "United States, Canada",
-    "source": "BBC",
-    "category": ""
-},
-{
-    "url": "https://feeds.bbci.co.uk/news/rss.xml?edition=int",
-    "country": "",
-    "source": "BBC",
-    "category": ""
-},
-{
-    "url": "http://rss.cnn.com/rss/cnn_us.rss",
-    "country": "United States",
-    "source": "CNN",
-    "category": ""
-},
-{
-    "url": "https://www.aljazeera.com/xml/rss/all.xml",
-    "country": "",
-    "source": "Al Jazeera",
-    "category": ""
-},
-{
-    "url": "https://abcnews.go.com/abcnews/topstories",
-    "country": "",
-    "source": "ABC",
-    "category": ""
+rss_feeds = [
+    {
+        "url": "https://feeds.bbci.co.uk/news/uk/rss.xml",
+        "country": "United Kingdom",
+        "source": "BBC",
+        "category": None
+    },
+    {
+        "url": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml",
+        "country": None,
+        "source": "BBC",
+        "category": None
+    },
+    {
+        "url": "https://www.cbc.ca/webfeed/rss/rss-canada",
+        "country": None,
+        "source": "CBC",
+        "category": None
+    },
 
-},
-{
-    "url": "https://abcnews.go.com/abcnews/technologyheadlines",
-    "country": "",
-    "source": "ABC",
-    "category": "Technology"
-}
+    # World has repeating news articles
+
+    # {
+    #     "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+    #     "country": "",
+    #     "source": "BBC",
+    #     "category": "International"
+    # },
+    {
+        "url": "https://feeds.bbci.co.uk/news/health/rss.xml",
+        "country": None,
+        "source": "BBC",
+        "category": "health"
+    },
+    {
+        "url": "https://www.aljazeera.com/xml/rss/all.xml",
+        "country": None,
+        "source": "Al Jazeera",
+        "category": None
+    },
+    {
+        "url": "https://abcnews.go.com/abcnews/topstories",
+        "country": None,
+        "source": "ABC",
+        "category": None
+    },
+    {
+        "url": "https://abcnews.go.com/abcnews/technologyheadlines",
+        "country": None,
+        "source": "ABC",
+        "category": "Technology"
+    }
 ]
 
 # Categories with keys and dictionaries
 key_word_category = {
-    "Technology": ["tech", "apple", "AI", "robot", "software"],
-    "Health": ["health", "vaccine", "covid", "mental", "medicine"],
-    "Politics": ["election", "government", "policy", "senate"],
-    "Sports": ["football", "soccer", "olympics", "NBA", "tennis"]
+    "Technology": [
+        "tech", "apple", "AI", "robot", "software",
+        "cloud", "data", "cyber", "quantum", "satellite",
+        "drone", "processor", "chip", "emissions", "robotics"
+    ],
+    "Health": [
+        "health", "vaccine", "covid", "covid-19",
+        "mental", "medicine", "pandemic", "disease",
+        "doctor", "hospital", "cancer", "diabetes"
+    ],
+    "Politics": [
+        "election", "government", "policy", "senate",
+        "democracy", "parliament", "congress", "law",
+        "UN", "NATO", "tariff", "sanction", "budget",
+        "campaign"
+    ],
+    "Sports": [
+        "football", "soccer", "olympics", "NBA", "tennis",
+        "cricket", "rugby", "golf", "F1", "cup", "league"
+    ]
 }
 
 # Key words for countries
@@ -72,7 +97,7 @@ key_word_country = {
     ],
     "Myanmar": [
         "Myanmar", "Burma", "Burmese", "Yangon", "Naypyidaw", "Min Aung Hlaing", 
-        "NLD", "Aung San Suu Kyi", "Tatmadaw", "Sagaing"
+        "NLD", "Aung San Suu Kyi", "Tatmadaw", "Sagaing", "Junta"
     ],
     "Russia": [
         "Russia", "Russian", "Moscow", "Putin", "Kremlin", "Ukraine war", 

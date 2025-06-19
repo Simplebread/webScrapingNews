@@ -9,7 +9,7 @@ all_news = []
 
 # Practice Output
 for feed in config.rss_feeds:
-    results = filter.filtered_list(feed["url"], feed["source"])
+    results = filter.filtered_list(feed["url"], feed["source"], feed["country"], feed["category"])
     all_news.extend(results)
 
 # Create data frame for CSV
