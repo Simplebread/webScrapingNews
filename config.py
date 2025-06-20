@@ -18,15 +18,12 @@ rss_feeds = [
         "source": "CBC",
         "category": None
     },
-
-    # World has repeating news articles
-
-    # {
-    #     "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
-    #     "country": "",
-    #     "source": "BBC",
-    #     "category": "International"
-    # },
+    {
+        "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+        "country": "",
+        "source": "BBC",
+        "category": "International"
+    },
     {
         "url": "https://feeds.bbci.co.uk/news/health/rss.xml",
         "country": None,

@@ -9,8 +9,11 @@ all_news = []
 
 # Practice Output
 for feed in config.rss_feeds:
-    results = filter.filtered_list(feed["url"], feed["source"], feed["country"], feed["category"])
-    all_news.extend(results)
+    try:
+        results = filter.filtered_list(feed["url"], feed["source"], feed["country"], feed["category"])
+        all_news.extend(results)
+    except:
+        print(f"[ERROR] Skipping {feed['url']}")
 
 # Create data frame for CSV
 df = pd.DataFrame(all_news)

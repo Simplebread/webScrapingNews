@@ -4,6 +4,8 @@ import parser as parser
 
 # Filtering using keywords
 def filtered_list(url, source, country, category):
+    print(f"Fetching: {url}")
+
     items = parser.get_rss_items(url)
     filtered_data = []
 
@@ -14,10 +16,17 @@ def filtered_list(url, source, country, category):
 
         # Detect country and category dynamically
         if country == None:
-            country = detect_country(title, description)
+            detected_country = detect_country(title, description)
+        else:
+            detected_country = country
 
         if category == None:
-            category = detect_category(title, description)
+            detected_category = detect_category(title, description)
+        else:
+            detected_category = category
+
+        # print(f"Detected Country: {detected_country}")
+        # print(f"Detected Category: {detected_category}")
 
         filtered_data.append({
             "title": title,
@@ -25,8 +34,8 @@ def filtered_list(url, source, country, category):
             "date": item.find("pubDate").text if item.find("pubDate") else "",
             "url": item.find("link").text if item.find("link") else "",
             "source": source,
-            "country": country,
-            "category": category
+            "country": detected_country,
+            "category": detected_category
         })
     return filtered_data
 
@@ -36,6 +45,7 @@ def detect_country(title, description):
     for country, keywords in config.key_word_country.items():
         for keyword in keywords:
             if keyword.lower() in content:
+                print(f"  [DEBUG] Found country keyword '{keyword}' for '{country}'") # Optional: more detailed debug
                 return country
     return "Unknown"
 
@@ -45,5 +55,6 @@ def detect_category(title, description):
     for category, keywords in config.key_word_category.items():
         for keyword in keywords:
             if keyword.lower() in content:
+                print(f"  [DEBUG] Found category keyword '{keyword}' for '{category}'") # Optional: more detailed debug
                 return category
     return "General"
