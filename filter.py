@@ -2,10 +2,13 @@
 import config as config
 import parser as parser
 
-# Filtering using keywords
+# Filter using keywords
 def filtered_list(url, source, country, category):
+
+    # Debugging
     print(f"Fetching: {url}")
 
+    # Create necesary variables 
     items = parser.get_rss_items(url)
     filtered_data = []
 
@@ -25,9 +28,11 @@ def filtered_list(url, source, country, category):
         else:
             detected_category = category
 
-        # print(f"Detected Country: {detected_country}")
-        # print(f"Detected Category: {detected_category}")
+        # For debugging
+        # print(f"[DEBUG] Detected Country: {detected_country}")
+        # print(f"[DEBUG] Detected Category: {detected_category}")
 
+        # Append all the data into the local variable which will be returned
         filtered_data.append({
             "title": title,
             "description": description,
@@ -39,22 +44,30 @@ def filtered_list(url, source, country, category):
         })
     return filtered_data
 
+# Function to detect country
 def detect_country(title, description):
     content = f"{title} {description}".lower()
-    # Add coutry to check the content with the country's name itself
+    # Check the values of the keys and comparing them for keywords
     for country, keywords in config.key_word_country.items():
         for keyword in keywords:
             if keyword.lower() in content:
-                print(f"  [DEBUG] Found country keyword '{keyword}' for '{country}'") # Optional: more detailed debug
+                # For debugging
+                # print(f"[DEBUG] Found country keyword '{keyword}' for '{country}'")
                 return country
     return "Unknown"
 
+# Functino to detect category
 def detect_category(title, description):
     content = f"{title} {description}".lower()
-    # Add coutry to check the content with the country's name itself
+    # Check the values of the keys and comparing them for keywords
     for category, keywords in config.key_word_category.items():
         for keyword in keywords:
             if keyword.lower() in content:
-                print(f"  [DEBUG] Found category keyword '{keyword}' for '{category}'") # Optional: more detailed debug
+                # For debugging
+                # print(f"[DEBUG] Found category keyword '{keyword}' for '{category}'")
                 return category
     return "General"
+
+# Function to detect duplicate in news and article entries
+# def detect_duplicate(title, read_titles):
+#     return title in read_titles

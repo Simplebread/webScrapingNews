@@ -7,12 +7,14 @@ import filter as filter
 # Create Variable
 all_news = []
 
-# Practice Output
+# Store results into variable
 for feed in config.rss_feeds:
     try:
+        # Inputs data from config.py to be processed
         results = filter.filtered_list(feed["url"], feed["source"], feed["country"], feed["category"])
         all_news.extend(results)
     except:
+        # Debugging
         print(f"[ERROR] Skipping {feed['url']}")
 
 # Create data frame for CSV

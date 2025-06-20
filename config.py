@@ -147,5 +147,118 @@ key_word_country = {
     "Philippines": [
         "Philippines", "Filipino", "Manila", "Duterte", "Marcos", 
         "Visayas", "Mindanao", "Tagalog", "Cebu", "Davao"
+    ],
+    "Indonesia": [
+        "Indonesia", "Indonesian", "Jakarta", "Jokowi", "Bali", 
+        "Java", "Sumatra", "Sulawesi", "Garuda", "Rupiah"
+    ],
+    "Pakistan": [
+        "Pakistan", "Pakistani", "Islamabad", "Karachi", "Lahore", 
+        "Imran Khan", "Punjab", "Urdu", "Khyber", "Sindh"
+    ],
+    "Bangladesh": [
+        "Bangladesh", "Bangladeshi", "Dhaka", "Sheikh Hasina", 
+        "Chittagong", "Bengali", "Padma", "Rohingya"
+    ],
+    "Turkey": [
+        "Turkey", "Turkish", "Ankara", "Istanbul", "Erdogan", 
+        "Bosporus", "Lira", "Hagia Sophia", "Atatürk"
+    ],
+    "Saudi Arabia": [
+        "Saudi Arabia", "Saudi", "Riyadh", "MBS", "Mecca", "Medina", 
+        "Aramco", "Hajj", "Oil", "Quran"
+    ],
+    "Iran": [
+        "Iran", "Tehran", "Persian", "Ayatollah", "Khamenei", 
+        "Revolutionary Guard", "Shia", "Sanctions", "Nuclear"
+    ],
+    "Israel": [
+        "Israel", "Israeli", "Jerusalem", "Tel Aviv", "Netanyahu", 
+        "IDF", "Gaza", "West Bank", "Hebrew", "Knesset"
+    ],
+    "Thailand": [
+        "Thailand", "Thai", "Bangkok", "Chiang Mai", "Bhumibol", 
+        "Prayut", "Baht", "Phuket", "Siam"
+    ],
+    "Vietnam": [
+        "Vietnam", "Vietnamese", "Hanoi", "Ho Chi Minh", 
+        "Da Nang", "Communist Party", "Mekong", "Dong", "Saigon"
+    ],
+    "Argentina": [
+        "Argentina", "Argentinian", "Buenos Aires", "Messi", 
+        "Patagonia", "Peso", "Maradona", "Tango"
+    ],
+    "Nigeria": [
+        "Nigeria", "Nigerian", "Abuja", "Lagos", "Buhari", 
+        "Yoruba", "Hausa", "Igbo", "Naira", "Boko Haram"
+    ],
+    "Egypt": [
+        "Egypt", "Egyptian", "Cairo", "Sisi", "Nile", "Pyramid", 
+        "Pharaoh", "Alexandria", "Giza", "Suez"
+    ],
+    "Spain": [
+        "Spain", "Spanish", "Madrid", "Barcelona", "Sánchez", 
+        "Catalonia", "Andalusia", "Basque", "Euro", "Iberia"
+    ],
+    "Poland": [
+        "Poland", "Polish", "Warsaw", "Duda", "Krakow", 
+        "Solidarity", "Gdańsk", "Zloty", "PiS"
+    ],
+    "Malaysia": [
+        "Malaysia", "Malaysian", "Kuala Lumpur", "Anwar", 
+        "Sabah", "Sarawak", "Malay", "Ringgit"
+    ],
+    "Vietnam": [
+        "Vietnam", "Vietnamese", "Hanoi", "Ho Chi Minh", 
+        "Da Nang", "Saigon", "Mekong", "Dong", "Communist Party"
+    ],
+    "Sweden": [
+        "Sweden", "Swedish", "Stockholm", "Kristersson", 
+        "Nobel", "IKEA", "Scandinavia", "Krona"
+    ],
+    "Norway": [
+        "Norway", "Norwegian", "Oslo", "Støre", "Fjord", 
+        "NATO", "Kroner", "Scandinavian"
+    ],
+    "Greece": [
+        "Greece", "Greek", "Athens", "Tsipras", "Mitsotakis", "Acropolis",
+        "Eurozone", "Olympics", "Aegean", "Parthenon"
+    ],
+    "Iraq": [
+        "Iraq", "Iraqi", "Baghdad", "Mosul", "Basra", "Kurdistan",
+        "Shiite", "Sunni", "Saddam Hussein", "Green Zone"
+    ],
+    "Syria": [
+        "Syria", "Syrian", "Damascus", "Aleppo", "Assad", "Homs",
+        "ISIS", "Kurds", "Idlib", "Golan"
+    ],
+    "Lebanon": [
+        "Lebanon", "Lebanese", "Beirut", "Hezbollah", "Cedar", "Michel Aoun",
+        "Port Explosion", "Hariri", "Tripoli"
+    ],
+    "Afghanistan": [
+        "Afghanistan", "Afghan", "Kabul", "Taliban", "Pashtun", "Hazaras",
+        "Burqa", "NATO withdrawal", "Ashraf Ghani"
+    ],
+    "North Korea": [
+        "North Korea", "Pyongyang", "Kim Jong-un", "DPRK", "Demilitarized Zone",
+        "Nuclear test", "Hermit Kingdom", "Missile launch"
+    ],
+    "Colombia": [
+        "Colombia", "Colombian", "Bogotá", "Medellín", "Cali", "FARC",
+        "Cartel", "Peso", "Duque", "Petro"
+    ],
+    "Venezuela": [
+        "Venezuela", "Venezuelan", "Caracas", "Maduro", "Bolivar", "Chávez",
+        "PDVSA", "Hyperinflation", "Opposition protest"
+    ],
+    "Chile": [
+        "Chile", "Chilean", "Santiago", "Pinochet", "Boric", "Andes",
+        "Constitutional reform", "Valparaíso"
+    ],
+    "Peru": [
+        "Peru", "Peruvian", "Lima", "Machu Picchu", "Quechua", "Pedro Castillo",
+        "Cusco", "Andean", "Inca"
     ]
 }
+
