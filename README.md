@@ -1,7 +1,7 @@
 <a id="readme-top"></a>
-Web Scraper for RSS News
+<h1>Web Scraper for RSS News</h1>
 
-Python Web Scraper for News using RSS and Beautiful Soup
+<p>Python Web Scraper for News using RSS and Beautiful Soup</p>
 
 <br />
 <br />
@@ -24,7 +24,6 @@ Python Web Scraper for News using RSS and Beautiful Soup
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#test-cases--coverage-summary">Test Cases & Coverage Summary</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -63,7 +62,7 @@ Provide step-by-step instructions on how to install and set up your project.
 
 1.  **Clone the repo**
     ```bash
-    git clone [https://github.com/Simplebread/webScrapingNews.git](https://github.com/Simplebread/webScrapingNews.git)
+    git clone https://github.com/Simplebread/webScrapingNews.git
     cd webScrapingNews
     ```
 2.  **Create Virtual Environment**
