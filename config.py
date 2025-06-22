@@ -7,18 +7,6 @@ rss_feeds = [
         "category": None
     },
     {
-        "url": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml",
-        "country": None,
-        "source": "BBC",
-        "category": None
-    },
-    {
-        "url": "https://www.cbc.ca/webfeed/rss/rss-canada",
-        "country": None,
-        "source": "CBC",
-        "category": None
-    },
-    {
         "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
         "country": None,
         "source": "BBC",
@@ -28,14 +16,29 @@ rss_feeds = [
         "url": "https://feeds.bbci.co.uk/news/health/rss.xml",
         "country": None,
         "source": "BBC",
-        "category": "health"
+        "category": "Health"
     },
+    {
+        "url": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml",
+        "country": None,
+        "source": "BBC",
+        "category": None
+    },
+    #
+    {
+        "url": "https://www.cbc.ca/webfeed/rss/rss-canada",
+        "country": None,
+        "source": "CBC",
+        "category": None
+    },
+    #
     {
         "url": "https://www.aljazeera.com/xml/rss/all.xml",
         "country": None,
         "source": "Al Jazeera",
         "category": None
     },
+    #
     {
         "url": "https://abcnews.go.com/abcnews/topstories",
         "country": None,
@@ -47,6 +50,65 @@ rss_feeds = [
         "country": None,
         "source": "ABC",
         "category": "Technology"
+    },
+    #
+    {
+        "url": "https://www.nippon.com/en/rss-all/",
+        "country": "Japan",
+        "source": "Nippon.com",
+        "category": None
+    },
+    #
+    {
+        "url": "https://www.abc.net.au/news/feed/2942460/rss.xml",
+        "country": "Australia",
+        "source": "ABC Australia",
+        "category": None
+    },
+    {
+        "url": "https://www.abc.net.au/news/feed/45924/rss.xml",
+        "country": "Australia",
+        "source": "ABC Australia",
+        "category": None
+    },
+    {
+        "url": "https://www.abc.net.au/local/rss/sydney/news.xml",
+        "country": "Australia",
+        "source": "ABC Australia",
+        "category": None
+    },
+    #
+    {
+        "url": "https://mexiconewsdaily.com/feed/",
+        "country": "Mexico",
+        "source": "Mexico News Daily",
+        "category": None
+    },
+    #
+    {
+        "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms",
+        "country": None,
+        "source": "Times of India",
+        "category": None
+    },
+    {
+        "url": "https://timesofindia.indiatimes.com/rssfeeds/-2128936835.cms",
+        "country": "India",
+        "source": "Times of India",
+        "category": None
+    },
+    {
+        "url": "https://timesofindia.indiatimes.com/rssfeeds/54829575.cms",
+        "country": "India",
+        "source": "Times of India",
+        "category": "Sport"
+    },
+    #
+    {
+        "url": "https://www.france24.com/en/france/rss",
+        "country": "France",
+        "source": "France24",
+        "category": None
     }
 ]
 

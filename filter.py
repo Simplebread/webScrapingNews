@@ -20,8 +20,9 @@ def filtered_list(url, source, country, category):
 
         # Parse again to get rid of complicated ugly news RSS inside description (CBC)
         soup = BeautifulSoup(description, "html.parser")
-        p_tag = soup.find("p")
-        description = p_tag.get_text().strip() if p_tag else description
+        for tag in soup(["img", "style", "script"]):
+            tag.decompose()
+        description = soup.get_text(separator=" ", strip=True)
 
         # Detect country and category dynamically
         if country == None:
