@@ -1,8 +1,7 @@
 # Import necessary libraries
-import pandas as pd
 import config as config
-import parser as parser
 import filter as filter
+import data_base as db
 
 # Create Variable
 all_news = []
@@ -17,6 +16,8 @@ for feed in config.rss_feeds:
         # Debugging
         print(f"[ERROR] Skipping {feed['url']}")
 
-# Create data frame for CSV
-df = pd.DataFrame(all_news)
-df.to_csv("news.csv", index=False, encoding='utf-8')
+# Delete duplicate entries
+all_news = filter.detect_duplicate(all_news)
+
+# Create data base using SQL Lite
+db.upload_data_base(all_news)

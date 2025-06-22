@@ -20,7 +20,7 @@ rss_feeds = [
     },
     {
         "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
-        "country": "",
+        "country": None,
         "source": "BBC",
         "category": "International"
     },

@@ -11,9 +11,9 @@ def get_rss_items(url):
     try:
         response = requests.get(url, headers=headers, timeout=10)
     except:
-        # debugging
-        print("[ERROR] Fail to retrieve request")
+        # Debugging
+        print(f"[ERROR] Fail to retrieve request for {url}")
 
-    # parses the information and transforms it into text for readability
+    # Parses the information and transforms it into text for readability
     soup = BeautifulSoup(response.text, "lxml-xml")
     return soup.find_all("item")

@@ -1,6 +1,7 @@
 # Import necessary libraries
 import config as config
 import parser as parser
+from bs4 import BeautifulSoup
 
 # Filter using keywords
 def filtered_list(url, source, country, category):
@@ -16,6 +17,11 @@ def filtered_list(url, source, country, category):
     for item in items:
         title = item.find("title").text if item.find("title") else ""
         description = item.find("description").text if item.find("description") else ""
+
+        # Parse again to get rid of complicated ugly news RSS inside description (CBC)
+        soup = BeautifulSoup(description, "html.parser")
+        p_tag = soup.find("p")
+        description = p_tag.get_text().strip() if p_tag else description
 
         # Detect country and category dynamically
         if country == None:
@@ -52,7 +58,7 @@ def detect_country(title, description):
         for keyword in keywords:
             if keyword.lower() in content:
                 # For debugging
-                # print(f"[DEBUG] Found country keyword '{keyword}' for '{country}'")
+                print(f"[DEBUG] Found country keyword '{keyword}' for '{country}'")
                 return country
     return "Unknown"
 
@@ -69,5 +75,19 @@ def detect_category(title, description):
     return "General"
 
 # Function to detect duplicate in news and article entries
-# def detect_duplicate(title, read_titles):
-#     return title in read_titles
+def detect_duplicate(list):
+    # Nested loop to go through the whole list
+    new_list = list
+    i = 0
+    while i<len(new_list):
+        j = i + 1
+        while j<len(new_list):
+            # Compares one title to everything in the list
+            if new_list[i]["title"].strip().lower() == new_list[j]['title'].strip().lower():
+                new_list.pop(j)
+            else:
+                j+=1
+        i+=1
+    return new_list
+
+
