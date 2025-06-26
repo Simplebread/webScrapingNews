@@ -1,0 +1,1069 @@
+2025-06-26 15:43:49,336 - INFO - Running parser to get request URLs.
+2025-06-26 15:43:49,336 - INFO - Running filter on new RSS feed.
+2025-06-26 15:43:50,716 - INFO - Running data base creation and csv exportation.
+2025-06-26 15:43:50,716 - DEBUG - Fetching: https://feeds.bbci.co.uk/news/uk/rss.xml
+2025-06-26 15:43:51,788 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:51,788 - DEBUG - Detected Country: United Kingdom, Category: Technology
+2025-06-26 15:43:51,788 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:43:51,788 - DEBUG - Detected Country: United Kingdom, Category: Politics
+2025-06-26 15:43:51,789 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:43:51,789 - DEBUG - Detected Country: United Kingdom, Category: General
+2025-06-26 15:43:51,789 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:43:51,789 - DEBUG - Detected Country: United Kingdom, Category: Politics
+2025-06-26 15:43:51,790 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:43:51,790 - DEBUG - Detected Country: United Kingdom, Category: General
+2025-06-26 15:43:51,790 - DEBUG - Found keyword 'health' for category 'Health'
+2025-06-26 15:43:51,790 - DEBUG - Detected Country: United Kingdom, Category: Health
+2025-06-26 15:43:51,790 - DEBUG - Found keyword 'government' for category 'Politics'
+2025-06-26 15:43:51,790 - DEBUG - Detected Country: United Kingdom, Category: Politics
+2025-06-26 15:43:51,791 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:51,791 - DEBUG - Detected Country: United Kingdom, Category: Technology
+2025-06-26 15:43:51,791 - DEBUG - Found keyword 'government' for category 'Politics'
+2025-06-26 15:43:51,791 - DEBUG - Detected Country: United Kingdom, Category: Politics
+2025-06-26 15:43:51,791 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:51,791 - DEBUG - Detected Country: United Kingdom, Category: Technology
+2025-06-26 15:43:51,792 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:51,792 - DEBUG - Detected Country: United Kingdom, Category: Technology
+2025-06-26 15:43:51,792 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:43:51,792 - DEBUG - Detected Country: United Kingdom, Category: Politics
+2025-06-26 15:43:51,792 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:43:51,792 - DEBUG - Detected Country: United Kingdom, Category: Politics
+2025-06-26 15:43:51,792 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:43:51,793 - DEBUG - Detected Country: United Kingdom, Category: General
+2025-06-26 15:43:51,793 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:51,793 - DEBUG - Detected Country: United Kingdom, Category: Technology
+2025-06-26 15:43:51,793 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:43:51,793 - DEBUG - Detected Country: United Kingdom, Category: Politics
+2025-06-26 15:43:51,793 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:43:51,793 - DEBUG - Detected Country: United Kingdom, Category: General
+2025-06-26 15:43:51,794 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:43:51,794 - DEBUG - Detected Country: United Kingdom, Category: General
+2025-06-26 15:43:51,794 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:51,794 - DEBUG - Detected Country: United Kingdom, Category: Technology
+2025-06-26 15:43:51,795 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:43:51,795 - DEBUG - Detected Country: United Kingdom, Category: General
+2025-06-26 15:43:51,796 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:51,796 - DEBUG - Detected Country: United Kingdom, Category: Technology
+2025-06-26 15:43:51,796 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:43:51,796 - DEBUG - Detected Country: United Kingdom, Category: Politics
+2025-06-26 15:43:51,796 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:43:51,796 - DEBUG - Detected Country: United Kingdom, Category: General
+2025-06-26 15:43:51,797 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:43:51,797 - DEBUG - Detected Country: United Kingdom, Category: Politics
+2025-06-26 15:43:51,797 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:51,797 - DEBUG - Detected Country: United Kingdom, Category: Technology
+2025-06-26 15:43:51,797 - INFO - Filtered 25 items from https://feeds.bbci.co.uk/news/uk/rss.xml
+2025-06-26 15:43:51,797 - DEBUG - Fetching: https://feeds.bbci.co.uk/news/world/rss.xml
+2025-06-26 15:43:52,071 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,071 - DEBUG - Detected Country: United States, Category: International
+2025-06-26 15:43:52,071 - DEBUG - Found keyword 'Iran' for country 'Iran'
+2025-06-26 15:43:52,072 - DEBUG - Detected Country: Iran, Category: International
+2025-06-26 15:43:52,072 - DEBUG - Found keyword 'ANC' for country 'South Africa'
+2025-06-26 15:43:52,072 - DEBUG - Detected Country: South Africa, Category: International
+2025-06-26 15:43:52,072 - DEBUG - Found keyword 'Trump' for country 'United States'
+2025-06-26 15:43:52,073 - DEBUG - Detected Country: United States, Category: International
+2025-06-26 15:43:52,073 - DEBUG - Found keyword 'Korea' for country 'South Korea'
+2025-06-26 15:43:52,073 - DEBUG - Detected Country: South Korea, Category: International
+2025-06-26 15:43:52,073 - DEBUG - Found keyword 'Trump' for country 'United States'
+2025-06-26 15:43:52,073 - DEBUG - Detected Country: United States, Category: International
+2025-06-26 15:43:52,073 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,074 - DEBUG - Detected Country: United States, Category: International
+2025-06-26 15:43:52,074 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,074 - DEBUG - Detected Country: United States, Category: International
+2025-06-26 15:43:52,074 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:52,074 - DEBUG - Detected Country: Unknown, Category: International
+2025-06-26 15:43:52,074 - DEBUG - Found keyword 'USA' for country 'United States'
+2025-06-26 15:43:52,075 - DEBUG - Detected Country: United States, Category: International
+2025-06-26 15:43:52,075 - DEBUG - Found keyword 'UK' for country 'United Kingdom'
+2025-06-26 15:43:52,075 - DEBUG - Detected Country: United Kingdom, Category: International
+2025-06-26 15:43:52,075 - DEBUG - Found keyword 'Trump' for country 'United States'
+2025-06-26 15:43:52,075 - DEBUG - Detected Country: United States, Category: International
+2025-06-26 15:43:52,075 - DEBUG - Found keyword 'UK' for country 'United Kingdom'
+2025-06-26 15:43:52,075 - DEBUG - Detected Country: United Kingdom, Category: International
+2025-06-26 15:43:52,076 - DEBUG - Found keyword 'America' for country 'United States'
+2025-06-26 15:43:52,076 - DEBUG - Detected Country: United States, Category: International
+2025-06-26 15:43:52,076 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:52,076 - DEBUG - Detected Country: Unknown, Category: International
+2025-06-26 15:43:52,076 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,076 - DEBUG - Detected Country: United States, Category: International
+2025-06-26 15:43:52,077 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,077 - DEBUG - Detected Country: United States, Category: International
+2025-06-26 15:43:52,077 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:52,077 - DEBUG - Detected Country: Unknown, Category: International
+2025-06-26 15:43:52,078 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,078 - DEBUG - Detected Country: United States, Category: International
+2025-06-26 15:43:52,078 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,078 - DEBUG - Detected Country: United States, Category: International
+2025-06-26 15:43:52,078 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,078 - DEBUG - Detected Country: United States, Category: International
+2025-06-26 15:43:52,079 - DEBUG - Found keyword 'South Korea' for country 'South Korea'
+2025-06-26 15:43:52,079 - DEBUG - Detected Country: South Korea, Category: International
+2025-06-26 15:43:52,079 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,079 - DEBUG - Detected Country: United States, Category: International
+2025-06-26 15:43:52,079 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,079 - DEBUG - Detected Country: United States, Category: International
+2025-06-26 15:43:52,079 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,079 - DEBUG - Detected Country: United States, Category: International
+2025-06-26 15:43:52,079 - DEBUG - Found keyword 'China' for country 'China'
+2025-06-26 15:43:52,079 - DEBUG - Detected Country: China, Category: International
+2025-06-26 15:43:52,080 - DEBUG - Found keyword 'America' for country 'United States'
+2025-06-26 15:43:52,080 - DEBUG - Detected Country: United States, Category: International
+2025-06-26 15:43:52,080 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:52,080 - DEBUG - Detected Country: Unknown, Category: International
+2025-06-26 15:43:52,080 - DEBUG - Found keyword 'UK' for country 'United Kingdom'
+2025-06-26 15:43:52,080 - DEBUG - Detected Country: United Kingdom, Category: International
+2025-06-26 15:43:52,081 - DEBUG - Found keyword 'Iran' for country 'Iran'
+2025-06-26 15:43:52,081 - DEBUG - Detected Country: Iran, Category: International
+2025-06-26 15:43:52,081 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,081 - DEBUG - Detected Country: United States, Category: International
+2025-06-26 15:43:52,081 - INFO - Filtered 31 items from https://feeds.bbci.co.uk/news/world/rss.xml
+2025-06-26 15:43:52,081 - DEBUG - Fetching: https://feeds.bbci.co.uk/news/health/rss.xml
+2025-06-26 15:43:52,647 - DEBUG - Found keyword 'ANC' for country 'South Africa'
+2025-06-26 15:43:52,647 - DEBUG - Detected Country: South Africa, Category: Health
+2025-06-26 15:43:52,647 - DEBUG - Found keyword 'London' for country 'United Kingdom'
+2025-06-26 15:43:52,648 - DEBUG - Detected Country: United Kingdom, Category: Health
+2025-06-26 15:43:52,648 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:52,648 - DEBUG - Detected Country: Unknown, Category: Health
+2025-06-26 15:43:52,649 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:52,649 - DEBUG - Detected Country: Unknown, Category: Health
+2025-06-26 15:43:52,649 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:52,649 - DEBUG - Detected Country: Unknown, Category: Health
+2025-06-26 15:43:52,649 - DEBUG - Found keyword 'England' for country 'United Kingdom'
+2025-06-26 15:43:52,649 - DEBUG - Detected Country: United Kingdom, Category: Health
+2025-06-26 15:43:52,649 - DEBUG - Found keyword 'England' for country 'United Kingdom'
+2025-06-26 15:43:52,649 - DEBUG - Detected Country: United Kingdom, Category: Health
+2025-06-26 15:43:52,649 - DEBUG - Found keyword 'England' for country 'United Kingdom'
+2025-06-26 15:43:52,649 - DEBUG - Detected Country: United Kingdom, Category: Health
+2025-06-26 15:43:52,650 - DEBUG - Found keyword 'UK' for country 'United Kingdom'
+2025-06-26 15:43:52,650 - DEBUG - Detected Country: United Kingdom, Category: Health
+2025-06-26 15:43:52,650 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:52,650 - DEBUG - Detected Country: Unknown, Category: Health
+2025-06-26 15:43:52,650 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,650 - DEBUG - Detected Country: United States, Category: Health
+2025-06-26 15:43:52,650 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:52,650 - DEBUG - Detected Country: Unknown, Category: Health
+2025-06-26 15:43:52,651 - DEBUG - Found keyword 'England' for country 'United Kingdom'
+2025-06-26 15:43:52,651 - DEBUG - Detected Country: United Kingdom, Category: Health
+2025-06-26 15:43:52,651 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,651 - DEBUG - Detected Country: United States, Category: Health
+2025-06-26 15:43:52,651 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:52,651 - DEBUG - Detected Country: Unknown, Category: Health
+2025-06-26 15:43:52,651 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,651 - DEBUG - Detected Country: United States, Category: Health
+2025-06-26 15:43:52,651 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,651 - DEBUG - Detected Country: United States, Category: Health
+2025-06-26 15:43:52,652 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,652 - DEBUG - Detected Country: United States, Category: Health
+2025-06-26 15:43:52,652 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:52,652 - DEBUG - Detected Country: Unknown, Category: Health
+2025-06-26 15:43:52,652 - DEBUG - Found keyword 'ANC' for country 'South Africa'
+2025-06-26 15:43:52,652 - DEBUG - Detected Country: South Africa, Category: Health
+2025-06-26 15:43:52,652 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,652 - DEBUG - Detected Country: United States, Category: Health
+2025-06-26 15:43:52,653 - DEBUG - Found keyword 'England' for country 'United Kingdom'
+2025-06-26 15:43:52,653 - DEBUG - Detected Country: United Kingdom, Category: Health
+2025-06-26 15:43:52,653 - DEBUG - Found keyword 'England' for country 'United Kingdom'
+2025-06-26 15:43:52,653 - DEBUG - Detected Country: United Kingdom, Category: Health
+2025-06-26 15:43:52,653 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,653 - DEBUG - Detected Country: United States, Category: Health
+2025-06-26 15:43:52,653 - DEBUG - Found keyword 'England' for country 'United Kingdom'
+2025-06-26 15:43:52,653 - DEBUG - Detected Country: United Kingdom, Category: Health
+2025-06-26 15:43:52,653 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:52,653 - DEBUG - Detected Country: Unknown, Category: Health
+2025-06-26 15:43:52,654 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:52,654 - DEBUG - Detected Country: Unknown, Category: Health
+2025-06-26 15:43:52,654 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,654 - DEBUG - Detected Country: United States, Category: Health
+2025-06-26 15:43:52,654 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,654 - DEBUG - Detected Country: United States, Category: Health
+2025-06-26 15:43:52,654 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,654 - DEBUG - Detected Country: United States, Category: Health
+2025-06-26 15:43:52,655 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:52,655 - DEBUG - Detected Country: Unknown, Category: Health
+2025-06-26 15:43:52,655 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,655 - DEBUG - Detected Country: United States, Category: Health
+2025-06-26 15:43:52,655 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,655 - DEBUG - Detected Country: United States, Category: Health
+2025-06-26 15:43:52,655 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:52,655 - DEBUG - Detected Country: Unknown, Category: Health
+2025-06-26 15:43:52,656 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:52,656 - DEBUG - Detected Country: Unknown, Category: Health
+2025-06-26 15:43:52,656 - DEBUG - Found keyword 'British' for country 'United Kingdom'
+2025-06-26 15:43:52,656 - DEBUG - Detected Country: United Kingdom, Category: Health
+2025-06-26 15:43:52,656 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,656 - DEBUG - Detected Country: United States, Category: Health
+2025-06-26 15:43:52,656 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:52,656 - DEBUG - Detected Country: Unknown, Category: Health
+2025-06-26 15:43:52,657 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:52,657 - DEBUG - Detected Country: Unknown, Category: Health
+2025-06-26 15:43:52,657 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,657 - DEBUG - Detected Country: United States, Category: Health
+2025-06-26 15:43:52,658 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:52,658 - DEBUG - Detected Country: Unknown, Category: Health
+2025-06-26 15:43:52,658 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:52,658 - DEBUG - Detected Country: Unknown, Category: Health
+2025-06-26 15:43:52,658 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,658 - DEBUG - Detected Country: United States, Category: Health
+2025-06-26 15:43:52,658 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:52,658 - DEBUG - Detected Country: Unknown, Category: Health
+2025-06-26 15:43:52,658 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,658 - DEBUG - Detected Country: United States, Category: Health
+2025-06-26 15:43:52,659 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:52,659 - DEBUG - Detected Country: Unknown, Category: Health
+2025-06-26 15:43:52,659 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:52,659 - DEBUG - Detected Country: Unknown, Category: Health
+2025-06-26 15:43:52,659 - DEBUG - Found keyword 'Rishi Sunak' for country 'United Kingdom'
+2025-06-26 15:43:52,659 - DEBUG - Detected Country: United Kingdom, Category: Health
+2025-06-26 15:43:52,659 - DEBUG - Found keyword 'ANC' for country 'South Africa'
+2025-06-26 15:43:52,659 - DEBUG - Detected Country: South Africa, Category: Health
+2025-06-26 15:43:52,659 - DEBUG - Found keyword 'ANC' for country 'South Africa'
+2025-06-26 15:43:52,659 - DEBUG - Detected Country: South Africa, Category: Health
+2025-06-26 15:43:52,660 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,660 - DEBUG - Detected Country: United States, Category: Health
+2025-06-26 15:43:52,660 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,660 - DEBUG - Detected Country: United States, Category: Health
+2025-06-26 15:43:52,660 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:52,660 - DEBUG - Detected Country: Unknown, Category: Health
+2025-06-26 15:43:52,660 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,660 - DEBUG - Detected Country: United States, Category: Health
+2025-06-26 15:43:52,660 - DEBUG - Found keyword 'UK' for country 'United Kingdom'
+2025-06-26 15:43:52,660 - DEBUG - Detected Country: United Kingdom, Category: Health
+2025-06-26 15:43:52,661 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:52,661 - DEBUG - Detected Country: Unknown, Category: Health
+2025-06-26 15:43:52,661 - DEBUG - Found keyword 'ANC' for country 'South Africa'
+2025-06-26 15:43:52,661 - DEBUG - Detected Country: South Africa, Category: Health
+2025-06-26 15:43:52,661 - DEBUG - Found keyword 'England' for country 'United Kingdom'
+2025-06-26 15:43:52,661 - DEBUG - Detected Country: United Kingdom, Category: Health
+2025-06-26 15:43:52,661 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:52,661 - DEBUG - Detected Country: Unknown, Category: Health
+2025-06-26 15:43:52,661 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,661 - DEBUG - Detected Country: United States, Category: Health
+2025-06-26 15:43:52,662 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,662 - DEBUG - Detected Country: United States, Category: Health
+2025-06-26 15:43:52,662 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:52,662 - DEBUG - Detected Country: Unknown, Category: Health
+2025-06-26 15:43:52,662 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,662 - DEBUG - Detected Country: United States, Category: Health
+2025-06-26 15:43:52,662 - DEBUG - Found keyword 'England' for country 'United Kingdom'
+2025-06-26 15:43:52,662 - DEBUG - Detected Country: United Kingdom, Category: Health
+2025-06-26 15:43:52,663 - DEBUG - Found keyword 'UK' for country 'United Kingdom'
+2025-06-26 15:43:52,663 - DEBUG - Detected Country: United Kingdom, Category: Health
+2025-06-26 15:43:52,663 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,663 - DEBUG - Detected Country: United States, Category: Health
+2025-06-26 15:43:52,663 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:52,663 - DEBUG - Detected Country: Unknown, Category: Health
+2025-06-26 15:43:52,663 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:52,663 - DEBUG - Detected Country: Unknown, Category: Health
+2025-06-26 15:43:52,664 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,664 - DEBUG - Detected Country: United States, Category: Health
+2025-06-26 15:43:52,664 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:52,664 - DEBUG - Detected Country: Unknown, Category: Health
+2025-06-26 15:43:52,664 - DEBUG - Found keyword 'UK' for country 'United Kingdom'
+2025-06-26 15:43:52,664 - DEBUG - Detected Country: United Kingdom, Category: Health
+2025-06-26 15:43:52,664 - DEBUG - Found keyword 'ISIS' for country 'Syria'
+2025-06-26 15:43:52,664 - DEBUG - Detected Country: Syria, Category: Health
+2025-06-26 15:43:52,664 - DEBUG - Found keyword 'ANC' for country 'South Africa'
+2025-06-26 15:43:52,664 - DEBUG - Detected Country: South Africa, Category: Health
+2025-06-26 15:43:52,665 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,665 - DEBUG - Detected Country: United States, Category: Health
+2025-06-26 15:43:52,665 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:52,665 - DEBUG - Detected Country: Unknown, Category: Health
+2025-06-26 15:43:52,665 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,665 - DEBUG - Detected Country: United States, Category: Health
+2025-06-26 15:43:52,665 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,665 - DEBUG - Detected Country: United States, Category: Health
+2025-06-26 15:43:52,665 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,665 - DEBUG - Detected Country: United States, Category: Health
+2025-06-26 15:43:52,666 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:52,666 - DEBUG - Detected Country: United States, Category: Health
+2025-06-26 15:43:52,666 - INFO - Filtered 79 items from https://feeds.bbci.co.uk/news/health/rss.xml
+2025-06-26 15:43:52,666 - DEBUG - Fetching: https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml
+2025-06-26 15:43:53,790 - DEBUG - Found keyword 'Trump' for country 'United States'
+2025-06-26 15:43:53,790 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:53,790 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:43:53,790 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:53,790 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:53,790 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:43:53,791 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:53,791 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:43:53,791 - DEBUG - Detected Country: United States, Category: Politics
+2025-06-26 15:43:53,791 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:53,791 - DEBUG - Found keyword 'cloud' for category 'Technology'
+2025-06-26 15:43:53,791 - DEBUG - Detected Country: Unknown, Category: Technology
+2025-06-26 15:43:53,792 - DEBUG - Found keyword 'MBS' for country 'Saudi Arabia'
+2025-06-26 15:43:53,792 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:43:53,792 - DEBUG - Detected Country: Saudi Arabia, Category: General
+2025-06-26 15:43:53,792 - DEBUG - Found keyword 'America' for country 'United States'
+2025-06-26 15:43:53,792 - DEBUG - Found keyword 'hospital' for category 'Health'
+2025-06-26 15:43:53,792 - DEBUG - Detected Country: United States, Category: Health
+2025-06-26 15:43:53,792 - DEBUG - Found keyword 'America' for country 'United States'
+2025-06-26 15:43:53,792 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:53,792 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:43:53,792 - DEBUG - Found keyword 'Senate' for country 'United States'
+2025-06-26 15:43:53,792 - DEBUG - Found keyword 'election' for category 'Politics'
+2025-06-26 15:43:53,793 - DEBUG - Detected Country: United States, Category: Politics
+2025-06-26 15:43:53,793 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:53,793 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:43:53,793 - DEBUG - Detected Country: United States, Category: Politics
+2025-06-26 15:43:53,793 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:53,793 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:53,793 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:43:53,793 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:53,793 - DEBUG - Found keyword 'policy' for category 'Politics'
+2025-06-26 15:43:53,793 - DEBUG - Detected Country: United States, Category: Politics
+2025-06-26 15:43:53,793 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:53,793 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:43:53,794 - DEBUG - Detected Country: United States, Category: Politics
+2025-06-26 15:43:53,794 - DEBUG - Found keyword 'Oil' for country 'Saudi Arabia'
+2025-06-26 15:43:53,794 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:43:53,794 - DEBUG - Detected Country: Saudi Arabia, Category: General
+2025-06-26 15:43:53,794 - DEBUG - Found keyword 'New York' for country 'United States'
+2025-06-26 15:43:53,794 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:43:53,794 - DEBUG - Detected Country: United States, Category: General
+2025-06-26 15:43:53,794 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:53,794 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:53,794 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:43:53,795 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:53,795 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:53,795 - DEBUG - Detected Country: Unknown, Category: Technology
+2025-06-26 15:43:53,795 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:53,795 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:53,795 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:43:53,795 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:53,795 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:53,795 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:43:53,796 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:53,796 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:43:53,796 - DEBUG - Detected Country: United States, Category: General
+2025-06-26 15:43:53,796 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:53,796 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:53,796 - DEBUG - Detected Country: Unknown, Category: Technology
+2025-06-26 15:43:53,797 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:53,797 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:43:53,797 - DEBUG - Detected Country: United States, Category: General
+2025-06-26 15:43:53,797 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:53,797 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:53,797 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:43:53,797 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:53,797 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:53,797 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:43:53,798 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:53,798 - DEBUG - Found keyword 'data' for category 'Technology'
+2025-06-26 15:43:53,798 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:43:53,798 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:53,798 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:43:53,798 - DEBUG - Detected Country: United States, Category: General
+2025-06-26 15:43:53,798 - DEBUG - Found keyword 'Canada' for country 'Canada'
+2025-06-26 15:43:53,798 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:43:53,798 - DEBUG - Detected Country: Canada, Category: General
+2025-06-26 15:43:53,798 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:53,798 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:43:53,799 - DEBUG - Detected Country: United States, Category: Politics
+2025-06-26 15:43:53,799 - INFO - Filtered 27 items from https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml
+2025-06-26 15:43:53,799 - DEBUG - Fetching: https://www.cbc.ca/webfeed/rss/rss-canada
+2025-06-26 15:43:55,856 - DEBUG - Found keyword 'Canada' for country 'Canada'
+2025-06-26 15:43:55,857 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:43:55,857 - DEBUG - Detected Country: Canada, Category: Politics
+2025-06-26 15:43:55,857 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:55,858 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:43:55,858 - DEBUG - Detected Country: Unknown, Category: General
+2025-06-26 15:43:55,858 - DEBUG - Found keyword 'Senate' for country 'United States'
+2025-06-26 15:43:55,858 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:55,858 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:43:55,859 - DEBUG - Found keyword 'Canada' for country 'Canada'
+2025-06-26 15:43:55,859 - DEBUG - Found keyword 'NATO' for category 'Politics'
+2025-06-26 15:43:55,859 - DEBUG - Detected Country: Canada, Category: Politics
+2025-06-26 15:43:55,859 - DEBUG - Found keyword 'Canada' for country 'Canada'
+2025-06-26 15:43:55,859 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:43:55,859 - DEBUG - Detected Country: Canada, Category: Politics
+2025-06-26 15:43:55,860 - DEBUG - Found keyword 'London' for country 'United Kingdom'
+2025-06-26 15:43:55,860 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:43:55,860 - DEBUG - Detected Country: United Kingdom, Category: General
+2025-06-26 15:43:55,860 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:55,860 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:55,860 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:43:55,862 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:55,862 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:43:55,862 - DEBUG - Detected Country: United States, Category: Politics
+2025-06-26 15:43:55,862 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:55,862 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:55,862 - DEBUG - Detected Country: Unknown, Category: Technology
+2025-06-26 15:43:55,863 - DEBUG - Found keyword 'ISIS' for country 'Syria'
+2025-06-26 15:43:55,863 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:55,863 - DEBUG - Detected Country: Syria, Category: Technology
+2025-06-26 15:43:55,864 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:55,864 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:55,864 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:43:55,864 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:55,864 - DEBUG - Found keyword 'government' for category 'Politics'
+2025-06-26 15:43:55,864 - DEBUG - Detected Country: United States, Category: Politics
+2025-06-26 15:43:55,864 - DEBUG - Found keyword 'Canada' for country 'Canada'
+2025-06-26 15:43:55,864 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:55,864 - DEBUG - Detected Country: Canada, Category: Technology
+2025-06-26 15:43:55,865 - DEBUG - Found keyword 'Canada' for country 'Canada'
+2025-06-26 15:43:55,865 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:43:55,865 - DEBUG - Detected Country: Canada, Category: Politics
+2025-06-26 15:43:55,865 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:55,865 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:55,866 - DEBUG - Detected Country: Unknown, Category: Technology
+2025-06-26 15:43:55,866 - DEBUG - Found keyword 'Senate' for country 'United States'
+2025-06-26 15:43:55,866 - DEBUG - Found keyword 'government' for category 'Politics'
+2025-06-26 15:43:55,866 - DEBUG - Detected Country: United States, Category: Politics
+2025-06-26 15:43:55,866 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:55,866 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:55,866 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:43:55,867 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:55,867 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:43:55,867 - DEBUG - Detected Country: Unknown, Category: Politics
+2025-06-26 15:43:55,867 - DEBUG - Found keyword 'Canada' for country 'Canada'
+2025-06-26 15:43:55,867 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:55,867 - DEBUG - Detected Country: Canada, Category: Technology
+2025-06-26 15:43:55,868 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:55,868 - DEBUG - Found keyword 'health' for category 'Health'
+2025-06-26 15:43:55,868 - DEBUG - Detected Country: Unknown, Category: Health
+2025-06-26 15:43:55,868 - INFO - Filtered 20 items from https://www.cbc.ca/webfeed/rss/rss-canada
+2025-06-26 15:43:55,868 - DEBUG - Fetching: https://www.aljazeera.com/xml/rss/all.xml
+2025-06-26 15:43:56,584 - DEBUG - Found keyword 'PiS' for country 'Poland'
+2025-06-26 15:43:56,585 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:43:56,585 - DEBUG - Detected Country: Poland, Category: General
+2025-06-26 15:43:56,585 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:56,585 - DEBUG - Found keyword 'NBA' for category 'Sports'
+2025-06-26 15:43:56,585 - DEBUG - Detected Country: Unknown, Category: Sports
+2025-06-26 15:43:56,585 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:56,585 - DEBUG - Found keyword 'policy' for category 'Politics'
+2025-06-26 15:43:56,585 - DEBUG - Detected Country: United States, Category: Politics
+2025-06-26 15:43:56,586 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:56,586 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:43:56,586 - DEBUG - Detected Country: United States, Category: General
+2025-06-26 15:43:56,586 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:56,586 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:56,586 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:43:56,587 - DEBUG - Found keyword 'USA' for country 'United States'
+2025-06-26 15:43:56,587 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:43:56,587 - DEBUG - Detected Country: United States, Category: Politics
+2025-06-26 15:43:56,588 - DEBUG - Found keyword 'Milan' for country 'Italy'
+2025-06-26 15:43:56,588 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:43:56,588 - DEBUG - Detected Country: Italy, Category: Politics
+2025-06-26 15:43:56,588 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:56,588 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:56,588 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:43:56,588 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:56,588 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:43:56,588 - DEBUG - Detected Country: United States, Category: Politics
+2025-06-26 15:43:56,589 - DEBUG - Found keyword 'UK' for country 'United Kingdom'
+2025-06-26 15:43:56,589 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:56,589 - DEBUG - Detected Country: United Kingdom, Category: Technology
+2025-06-26 15:43:56,589 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:56,589 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:43:56,589 - DEBUG - Detected Country: United States, Category: Politics
+2025-06-26 15:43:56,589 - DEBUG - Found keyword 'UK' for country 'United Kingdom'
+2025-06-26 15:43:56,589 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:56,589 - DEBUG - Detected Country: United Kingdom, Category: Technology
+2025-06-26 15:43:56,589 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:56,590 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:43:56,590 - DEBUG - Detected Country: United States, Category: General
+2025-06-26 15:43:56,590 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:56,590 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:43:56,590 - DEBUG - Detected Country: United States, Category: General
+2025-06-26 15:43:56,590 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:56,590 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:56,590 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:43:56,591 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:56,591 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:56,591 - DEBUG - Detected Country: Unknown, Category: Technology
+2025-06-26 15:43:56,591 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:56,591 - DEBUG - Found keyword 'football' for category 'Sports'
+2025-06-26 15:43:56,591 - DEBUG - Detected Country: Unknown, Category: Sports
+2025-06-26 15:43:56,592 - DEBUG - Found keyword 'Israel' for country 'Israel'
+2025-06-26 15:43:56,592 - DEBUG - Found keyword 'health' for category 'Health'
+2025-06-26 15:43:56,592 - DEBUG - Detected Country: Israel, Category: Health
+2025-06-26 15:43:56,592 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:56,592 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:43:56,592 - DEBUG - Detected Country: United States, Category: Politics
+2025-06-26 15:43:56,592 - DEBUG - Found keyword 'Colombia' for country 'Colombia'
+2025-06-26 15:43:56,592 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:56,592 - DEBUG - Detected Country: Colombia, Category: Technology
+2025-06-26 15:43:56,592 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:56,592 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:56,592 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:43:56,593 - DEBUG - Found keyword 'Syria' for country 'Syria'
+2025-06-26 15:43:56,593 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:56,593 - DEBUG - Detected Country: Syria, Category: Technology
+2025-06-26 15:43:56,593 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:56,593 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:56,593 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:43:56,593 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:56,593 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:56,593 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:43:56,593 - DEBUG - Found keyword 'France' for country 'France'
+2025-06-26 15:43:56,593 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:43:56,593 - DEBUG - Detected Country: France, Category: General
+2025-06-26 15:43:56,593 - INFO - Filtered 25 items from https://www.aljazeera.com/xml/rss/all.xml
+2025-06-26 15:43:56,593 - DEBUG - Fetching: https://abcnews.go.com/abcnews/topstories
+2025-06-26 15:43:58,594 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:58,595 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:58,595 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:43:58,595 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:58,595 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:43:58,595 - DEBUG - Detected Country: Unknown, Category: General
+2025-06-26 15:43:58,595 - DEBUG - Found keyword 'Pentagon' for country 'United States'
+2025-06-26 15:43:58,595 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:58,595 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:43:58,595 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:58,595 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:58,595 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:43:58,596 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:58,596 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:43:58,596 - DEBUG - Detected Country: Unknown, Category: General
+2025-06-26 15:43:58,596 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:58,596 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:58,596 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:43:58,596 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:58,597 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:58,597 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:43:58,597 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:58,597 - DEBUG - Found keyword 'league' for category 'Sports'
+2025-06-26 15:43:58,597 - DEBUG - Detected Country: United States, Category: Sports
+2025-06-26 15:43:58,597 - DEBUG - Found keyword 'USA' for country 'United States'
+2025-06-26 15:43:58,597 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:43:58,597 - DEBUG - Detected Country: United States, Category: Politics
+2025-06-26 15:43:58,597 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:58,597 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:43:58,597 - DEBUG - Detected Country: Unknown, Category: General
+2025-06-26 15:43:58,598 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:58,598 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:43:58,598 - DEBUG - Detected Country: Unknown, Category: General
+2025-06-26 15:43:58,598 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:58,598 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:43:58,598 - DEBUG - Detected Country: United States, Category: General
+2025-06-26 15:43:58,598 - DEBUG - Found keyword 'Chile' for country 'Chile'
+2025-06-26 15:43:58,598 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:58,598 - DEBUG - Detected Country: Chile, Category: Technology
+2025-06-26 15:43:58,598 - DEBUG - Found keyword 'China' for country 'China'
+2025-06-26 15:43:58,598 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:43:58,598 - DEBUG - Detected Country: China, Category: General
+2025-06-26 15:43:58,599 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:58,599 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:43:58,599 - DEBUG - Detected Country: Unknown, Category: General
+2025-06-26 15:43:58,599 - DEBUG - Found keyword 'Trump' for country 'United States'
+2025-06-26 15:43:58,599 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:43:58,599 - DEBUG - Detected Country: United States, Category: Politics
+2025-06-26 15:43:58,599 - DEBUG - Found keyword 'UK' for country 'United Kingdom'
+2025-06-26 15:43:58,599 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:58,599 - DEBUG - Detected Country: United Kingdom, Category: Technology
+2025-06-26 15:43:58,599 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:58,599 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:58,599 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:43:58,600 - DEBUG - Found keyword 'Trump' for country 'United States'
+2025-06-26 15:43:58,600 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:58,600 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:43:58,600 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:58,600 - DEBUG - Found keyword 'congress' for category 'Politics'
+2025-06-26 15:43:58,600 - DEBUG - Detected Country: United States, Category: Politics
+2025-06-26 15:43:58,600 - DEBUG - Found keyword 'UK' for country 'United Kingdom'
+2025-06-26 15:43:58,600 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:58,601 - DEBUG - Detected Country: United Kingdom, Category: Technology
+2025-06-26 15:43:58,601 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:43:58,601 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:43:58,601 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:43:58,601 - DEBUG - Found keyword 'Trump' for country 'United States'
+2025-06-26 15:43:58,601 - DEBUG - Found keyword 'senate' for category 'Politics'
+2025-06-26 15:43:58,601 - DEBUG - Detected Country: United States, Category: Politics
+2025-06-26 15:43:58,602 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:58,602 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:43:58,602 - DEBUG - Detected Country: Unknown, Category: General
+2025-06-26 15:43:58,602 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:43:58,602 - DEBUG - Found keyword 'health' for category 'Health'
+2025-06-26 15:43:58,602 - DEBUG - Detected Country: Unknown, Category: Health
+2025-06-26 15:43:58,602 - INFO - Filtered 25 items from https://abcnews.go.com/abcnews/topstories
+2025-06-26 15:43:58,603 - DEBUG - Fetching: https://abcnews.go.com/abcnews/technologyheadlines
+2025-06-26 15:44:00,847 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:44:00,847 - DEBUG - Detected Country: Unknown, Category: Technology
+2025-06-26 15:44:00,848 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:00,848 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:44:00,848 - DEBUG - Found keyword 'India' for country 'India'
+2025-06-26 15:44:00,848 - DEBUG - Detected Country: India, Category: Technology
+2025-06-26 15:44:00,848 - DEBUG - Found keyword 'UK' for country 'United Kingdom'
+2025-06-26 15:44:00,848 - DEBUG - Detected Country: United Kingdom, Category: Technology
+2025-06-26 15:44:00,848 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:00,848 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:44:00,848 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:00,849 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:44:00,849 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:00,849 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:44:00,849 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:00,849 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:44:00,849 - DEBUG - Found keyword 'UK' for country 'United Kingdom'
+2025-06-26 15:44:00,849 - DEBUG - Detected Country: United Kingdom, Category: Technology
+2025-06-26 15:44:00,850 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:00,850 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:44:00,850 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:00,850 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:44:00,850 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:44:00,850 - DEBUG - Detected Country: Unknown, Category: Technology
+2025-06-26 15:44:00,850 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:00,850 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:44:00,851 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:00,851 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:44:00,851 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:00,851 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:44:00,851 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:44:00,851 - DEBUG - Detected Country: Unknown, Category: Technology
+2025-06-26 15:44:00,852 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:00,852 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:44:00,852 - DEBUG - Found keyword 'Iran' for country 'Iran'
+2025-06-26 15:44:00,852 - DEBUG - Detected Country: Iran, Category: Technology
+2025-06-26 15:44:00,852 - DEBUG - Found keyword 'UK' for country 'United Kingdom'
+2025-06-26 15:44:00,852 - DEBUG - Detected Country: United Kingdom, Category: Technology
+2025-06-26 15:44:00,853 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:44:00,853 - DEBUG - Detected Country: Unknown, Category: Technology
+2025-06-26 15:44:00,853 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:00,853 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:44:00,853 - DEBUG - Found keyword 'UK' for country 'United Kingdom'
+2025-06-26 15:44:00,853 - DEBUG - Detected Country: United Kingdom, Category: Technology
+2025-06-26 15:44:00,854 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:44:00,854 - DEBUG - Detected Country: Unknown, Category: Technology
+2025-06-26 15:44:00,854 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:00,854 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:44:00,854 - DEBUG - Found keyword 'Amazon' for country 'Brazil'
+2025-06-26 15:44:00,854 - DEBUG - Detected Country: Brazil, Category: Technology
+2025-06-26 15:44:00,854 - INFO - Filtered 25 items from https://abcnews.go.com/abcnews/technologyheadlines
+2025-06-26 15:44:00,854 - DEBUG - Fetching: https://www.nippon.com/en/rss-all/
+2025-06-26 15:44:01,649 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:01,649 - DEBUG - Detected Country: Japan, Category: Technology
+2025-06-26 15:44:01,649 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:01,649 - DEBUG - Detected Country: Japan, Category: Technology
+2025-06-26 15:44:01,650 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:01,650 - DEBUG - Detected Country: Japan, Category: Technology
+2025-06-26 15:44:01,650 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:01,650 - DEBUG - Detected Country: Japan, Category: Technology
+2025-06-26 15:44:01,651 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:44:01,651 - DEBUG - Detected Country: Japan, Category: General
+2025-06-26 15:44:01,651 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:01,651 - DEBUG - Detected Country: Japan, Category: Politics
+2025-06-26 15:44:01,651 - DEBUG - Found keyword 'election' for category 'Politics'
+2025-06-26 15:44:01,651 - DEBUG - Detected Country: Japan, Category: Politics
+2025-06-26 15:44:01,651 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:01,651 - DEBUG - Detected Country: Japan, Category: Technology
+2025-06-26 15:44:01,652 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:01,652 - DEBUG - Detected Country: Japan, Category: Politics
+2025-06-26 15:44:01,652 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:44:01,652 - DEBUG - Detected Country: Japan, Category: General
+2025-06-26 15:44:01,652 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:01,652 - DEBUG - Detected Country: Japan, Category: Politics
+2025-06-26 15:44:01,653 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:44:01,653 - DEBUG - Detected Country: Japan, Category: General
+2025-06-26 15:44:01,653 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:44:01,653 - DEBUG - Detected Country: Japan, Category: General
+2025-06-26 15:44:01,653 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:01,653 - DEBUG - Detected Country: Japan, Category: Politics
+2025-06-26 15:44:01,653 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:01,653 - DEBUG - Detected Country: Japan, Category: Technology
+2025-06-26 15:44:01,653 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:01,653 - DEBUG - Detected Country: Japan, Category: Technology
+2025-06-26 15:44:01,654 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:44:01,654 - DEBUG - Detected Country: Japan, Category: General
+2025-06-26 15:44:01,654 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:01,654 - DEBUG - Detected Country: Japan, Category: Technology
+2025-06-26 15:44:01,654 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:01,654 - DEBUG - Detected Country: Japan, Category: Technology
+2025-06-26 15:44:01,654 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:01,654 - DEBUG - Detected Country: Japan, Category: Politics
+2025-06-26 15:44:01,654 - INFO - Filtered 20 items from https://www.nippon.com/en/rss-all/
+2025-06-26 15:44:01,654 - DEBUG - Fetching: https://www.abc.net.au/news/feed/2942460/rss.xml
+2025-06-26 15:44:02,136 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:02,136 - DEBUG - Detected Country: Australia, Category: Technology
+2025-06-26 15:44:02,136 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:02,136 - DEBUG - Detected Country: Australia, Category: Politics
+2025-06-26 15:44:02,136 - DEBUG - Found keyword 'law' for category 'Politics'
+2025-06-26 15:44:02,136 - DEBUG - Detected Country: Australia, Category: Politics
+2025-06-26 15:44:02,136 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:02,136 - DEBUG - Detected Country: Australia, Category: Technology
+2025-06-26 15:44:02,137 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:02,137 - DEBUG - Detected Country: Australia, Category: Technology
+2025-06-26 15:44:02,137 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:02,137 - DEBUG - Detected Country: Australia, Category: Technology
+2025-06-26 15:44:02,137 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:02,137 - DEBUG - Detected Country: Australia, Category: Technology
+2025-06-26 15:44:02,137 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:02,137 - DEBUG - Detected Country: Australia, Category: Technology
+2025-06-26 15:44:02,137 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:44:02,137 - DEBUG - Detected Country: Australia, Category: General
+2025-06-26 15:44:02,137 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:44:02,137 - DEBUG - Detected Country: Australia, Category: General
+2025-06-26 15:44:02,138 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:02,138 - DEBUG - Detected Country: Australia, Category: Technology
+2025-06-26 15:44:02,138 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:44:02,138 - DEBUG - Detected Country: Australia, Category: General
+2025-06-26 15:44:02,138 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:02,138 - DEBUG - Detected Country: Australia, Category: Technology
+2025-06-26 15:44:02,138 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:44:02,138 - DEBUG - Detected Country: Australia, Category: General
+2025-06-26 15:44:02,138 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:02,138 - DEBUG - Detected Country: Australia, Category: Technology
+2025-06-26 15:44:02,138 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:02,138 - DEBUG - Detected Country: Australia, Category: Politics
+2025-06-26 15:44:02,139 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:02,139 - DEBUG - Detected Country: Australia, Category: Politics
+2025-06-26 15:44:02,139 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:02,139 - DEBUG - Detected Country: Australia, Category: Politics
+2025-06-26 15:44:02,139 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:02,139 - DEBUG - Detected Country: Australia, Category: Technology
+2025-06-26 15:44:02,139 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:02,139 - DEBUG - Detected Country: Australia, Category: Technology
+2025-06-26 15:44:02,139 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:02,139 - DEBUG - Detected Country: Australia, Category: Politics
+2025-06-26 15:44:02,139 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:02,139 - DEBUG - Detected Country: Australia, Category: Politics
+2025-06-26 15:44:02,139 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:02,139 - DEBUG - Detected Country: Australia, Category: Technology
+2025-06-26 15:44:02,139 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:02,139 - DEBUG - Detected Country: Australia, Category: Technology
+2025-06-26 15:44:02,140 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:44:02,140 - DEBUG - Detected Country: Australia, Category: General
+2025-06-26 15:44:02,140 - INFO - Filtered 25 items from https://www.abc.net.au/news/feed/2942460/rss.xml
+2025-06-26 15:44:02,140 - DEBUG - Fetching: https://www.abc.net.au/news/feed/45924/rss.xml
+2025-06-26 15:44:02,709 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:02,709 - DEBUG - Detected Country: Australia, Category: Technology
+2025-06-26 15:44:02,709 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:02,709 - DEBUG - Detected Country: Australia, Category: Politics
+2025-06-26 15:44:02,709 - DEBUG - Found keyword 'law' for category 'Politics'
+2025-06-26 15:44:02,709 - DEBUG - Detected Country: Australia, Category: Politics
+2025-06-26 15:44:02,710 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:02,710 - DEBUG - Detected Country: Australia, Category: Technology
+2025-06-26 15:44:02,710 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:02,710 - DEBUG - Detected Country: Australia, Category: Technology
+2025-06-26 15:44:02,710 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:02,710 - DEBUG - Detected Country: Australia, Category: Technology
+2025-06-26 15:44:02,710 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:02,710 - DEBUG - Detected Country: Australia, Category: Technology
+2025-06-26 15:44:02,710 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:02,710 - DEBUG - Detected Country: Australia, Category: Technology
+2025-06-26 15:44:02,710 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:44:02,710 - DEBUG - Detected Country: Australia, Category: General
+2025-06-26 15:44:02,710 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:44:02,711 - DEBUG - Detected Country: Australia, Category: General
+2025-06-26 15:44:02,711 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:02,711 - DEBUG - Detected Country: Australia, Category: Technology
+2025-06-26 15:44:02,711 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:44:02,711 - DEBUG - Detected Country: Australia, Category: General
+2025-06-26 15:44:02,711 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:02,711 - DEBUG - Detected Country: Australia, Category: Technology
+2025-06-26 15:44:02,711 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:44:02,711 - DEBUG - Detected Country: Australia, Category: General
+2025-06-26 15:44:02,711 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:02,711 - DEBUG - Detected Country: Australia, Category: Technology
+2025-06-26 15:44:02,711 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:02,711 - DEBUG - Detected Country: Australia, Category: Politics
+2025-06-26 15:44:02,711 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:02,711 - DEBUG - Detected Country: Australia, Category: Politics
+2025-06-26 15:44:02,712 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:02,712 - DEBUG - Detected Country: Australia, Category: Politics
+2025-06-26 15:44:02,712 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:02,712 - DEBUG - Detected Country: Australia, Category: Technology
+2025-06-26 15:44:02,712 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:02,712 - DEBUG - Detected Country: Australia, Category: Technology
+2025-06-26 15:44:02,712 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:02,712 - DEBUG - Detected Country: Australia, Category: Politics
+2025-06-26 15:44:02,712 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:02,712 - DEBUG - Detected Country: Australia, Category: Politics
+2025-06-26 15:44:02,712 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:02,712 - DEBUG - Detected Country: Australia, Category: Technology
+2025-06-26 15:44:02,712 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:02,712 - DEBUG - Detected Country: Australia, Category: Technology
+2025-06-26 15:44:02,713 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:44:02,713 - DEBUG - Detected Country: Australia, Category: General
+2025-06-26 15:44:02,713 - INFO - Filtered 25 items from https://www.abc.net.au/news/feed/45924/rss.xml
+2025-06-26 15:44:02,713 - DEBUG - Fetching: https://www.abc.net.au/local/rss/sydney/news.xml
+2025-06-26 15:44:03,479 - INFO - Filtered 0 items from https://www.abc.net.au/local/rss/sydney/news.xml
+2025-06-26 15:44:03,479 - DEBUG - Fetching: https://mexiconewsdaily.com/feed/
+2025-06-26 15:44:06,183 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:06,184 - DEBUG - Detected Country: Mexico, Category: Technology
+2025-06-26 15:44:06,185 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:06,185 - DEBUG - Detected Country: Mexico, Category: Technology
+2025-06-26 15:44:06,185 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:06,185 - DEBUG - Detected Country: Mexico, Category: Technology
+2025-06-26 15:44:06,186 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:06,186 - DEBUG - Detected Country: Mexico, Category: Technology
+2025-06-26 15:44:06,186 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:06,186 - DEBUG - Detected Country: Mexico, Category: Technology
+2025-06-26 15:44:06,187 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:06,187 - DEBUG - Detected Country: Mexico, Category: Technology
+2025-06-26 15:44:06,187 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:06,187 - DEBUG - Detected Country: Mexico, Category: Technology
+2025-06-26 15:44:06,188 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:06,188 - DEBUG - Detected Country: Mexico, Category: Technology
+2025-06-26 15:44:06,188 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:06,188 - DEBUG - Detected Country: Mexico, Category: Technology
+2025-06-26 15:44:06,189 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:06,189 - DEBUG - Detected Country: Mexico, Category: Technology
+2025-06-26 15:44:06,189 - INFO - Filtered 10 items from https://mexiconewsdaily.com/feed/
+2025-06-26 15:44:06,189 - DEBUG - Fetching: https://timesofindia.indiatimes.com/rssfeedstopstories.cms
+2025-06-26 15:44:07,403 - DEBUG - Found keyword 'Delhi' for country 'India'
+2025-06-26 15:44:07,403 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,403 - DEBUG - Detected Country: India, Category: Technology
+2025-06-26 15:44:07,403 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:07,403 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,403 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:44:07,404 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:07,404 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,404 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:44:07,404 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:07,404 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:07,404 - DEBUG - Detected Country: United States, Category: Politics
+2025-06-26 15:44:07,405 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:44:07,405 - DEBUG - Found keyword 'tech' for category 'Technology'
+2025-06-26 15:44:07,405 - DEBUG - Detected Country: Unknown, Category: Technology
+2025-06-26 15:44:07,405 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:07,405 - DEBUG - Found keyword 'tech' for category 'Technology'
+2025-06-26 15:44:07,405 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:44:07,405 - DEBUG - Found keyword 'England' for country 'United Kingdom'
+2025-06-26 15:44:07,405 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,405 - DEBUG - Detected Country: United Kingdom, Category: Technology
+2025-06-26 15:44:07,406 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:07,406 - DEBUG - Found keyword 'law' for category 'Politics'
+2025-06-26 15:44:07,406 - DEBUG - Detected Country: United States, Category: Politics
+2025-06-26 15:44:07,406 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:44:07,406 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:07,406 - DEBUG - Detected Country: Unknown, Category: Politics
+2025-06-26 15:44:07,407 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:07,407 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,407 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:44:07,407 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:07,407 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,407 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:44:07,407 - DEBUG - Found keyword 'ANC' for country 'South Africa'
+2025-06-26 15:44:07,407 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,407 - DEBUG - Detected Country: South Africa, Category: Technology
+2025-06-26 15:44:07,408 - DEBUG - Found keyword 'India' for country 'India'
+2025-06-26 15:44:07,408 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:07,408 - DEBUG - Detected Country: India, Category: Politics
+2025-06-26 15:44:07,408 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:07,408 - DEBUG - Found keyword 'tech' for category 'Technology'
+2025-06-26 15:44:07,408 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:44:07,408 - DEBUG - Found keyword 'Trump' for country 'United States'
+2025-06-26 15:44:07,408 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,408 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:44:07,409 - DEBUG - Found keyword 'ANC' for country 'South Africa'
+2025-06-26 15:44:07,409 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,409 - DEBUG - Detected Country: South Africa, Category: Technology
+2025-06-26 15:44:07,409 - DEBUG - Found keyword 'India' for country 'India'
+2025-06-26 15:44:07,409 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,409 - DEBUG - Detected Country: India, Category: Technology
+2025-06-26 15:44:07,409 - WARNING - Description not found in RSS item.
+2025-06-26 15:44:07,409 - DEBUG - Found keyword 'UK' for country 'United Kingdom'
+2025-06-26 15:44:07,409 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:44:07,409 - DEBUG - Detected Country: United Kingdom, Category: General
+2025-06-26 15:44:07,410 - DEBUG - Found keyword 'UK' for country 'United Kingdom'
+2025-06-26 15:44:07,410 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,410 - DEBUG - Detected Country: United Kingdom, Category: Technology
+2025-06-26 15:44:07,410 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:07,410 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,410 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:44:07,410 - DEBUG - Found keyword 'BJP' for country 'India'
+2025-06-26 15:44:07,410 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,410 - DEBUG - Detected Country: India, Category: Technology
+2025-06-26 15:44:07,410 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:07,410 - DEBUG - Found keyword 'tech' for category 'Technology'
+2025-06-26 15:44:07,410 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:44:07,411 - DEBUG - Found keyword 'India' for country 'India'
+2025-06-26 15:44:07,411 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,411 - DEBUG - Detected Country: India, Category: Technology
+2025-06-26 15:44:07,411 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:07,411 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:07,411 - DEBUG - Detected Country: United States, Category: Politics
+2025-06-26 15:44:07,411 - DEBUG - Found keyword 'England' for country 'United Kingdom'
+2025-06-26 15:44:07,411 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:07,411 - DEBUG - Detected Country: United Kingdom, Category: Politics
+2025-06-26 15:44:07,411 - DEBUG - Found keyword 'China' for country 'China'
+2025-06-26 15:44:07,411 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,411 - DEBUG - Detected Country: China, Category: Technology
+2025-06-26 15:44:07,412 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:07,412 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:44:07,412 - DEBUG - Detected Country: United States, Category: General
+2025-06-26 15:44:07,412 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:07,412 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,412 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:44:07,412 - DEBUG - Found keyword 'UK' for country 'United Kingdom'
+2025-06-26 15:44:07,412 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:07,412 - DEBUG - Detected Country: United Kingdom, Category: Politics
+2025-06-26 15:44:07,412 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:07,412 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:07,412 - DEBUG - Detected Country: United States, Category: Politics
+2025-06-26 15:44:07,413 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:07,413 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,413 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:44:07,413 - DEBUG - Found keyword 'England' for country 'United Kingdom'
+2025-06-26 15:44:07,413 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,413 - DEBUG - Detected Country: United Kingdom, Category: Technology
+2025-06-26 15:44:07,413 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:07,413 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,413 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:44:07,414 - WARNING - No country detected; defaulting to 'Unknown'
+2025-06-26 15:44:07,414 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,414 - DEBUG - Detected Country: Unknown, Category: Technology
+2025-06-26 15:44:07,414 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:07,414 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,414 - DEBUG - Detected Country: United States, Category: Technology
+2025-06-26 15:44:07,415 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:07,415 - DEBUG - Found keyword 'NATO' for category 'Politics'
+2025-06-26 15:44:07,415 - DEBUG - Detected Country: United States, Category: Politics
+2025-06-26 15:44:07,415 - DEBUG - Found keyword 'ANC' for country 'South Africa'
+2025-06-26 15:44:07,415 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,415 - DEBUG - Detected Country: South Africa, Category: Technology
+2025-06-26 15:44:07,415 - DEBUG - Found keyword 'England' for country 'United Kingdom'
+2025-06-26 15:44:07,415 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,415 - DEBUG - Detected Country: United Kingdom, Category: Technology
+2025-06-26 15:44:07,415 - DEBUG - Found keyword 'China' for country 'China'
+2025-06-26 15:44:07,415 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,415 - DEBUG - Detected Country: China, Category: Technology
+2025-06-26 15:44:07,416 - DEBUG - Found keyword 'UK' for country 'United Kingdom'
+2025-06-26 15:44:07,416 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,416 - DEBUG - Detected Country: United Kingdom, Category: Technology
+2025-06-26 15:44:07,416 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:07,416 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:07,416 - DEBUG - Detected Country: United States, Category: Politics
+2025-06-26 15:44:07,416 - DEBUG - Found keyword 'India' for country 'India'
+2025-06-26 15:44:07,416 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:07,416 - DEBUG - Detected Country: India, Category: Politics
+2025-06-26 15:44:07,416 - DEBUG - Found keyword 'England' for country 'United Kingdom'
+2025-06-26 15:44:07,416 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,416 - DEBUG - Detected Country: United Kingdom, Category: Technology
+2025-06-26 15:44:07,417 - DEBUG - Found keyword 'US' for country 'United States'
+2025-06-26 15:44:07,417 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:07,417 - DEBUG - Detected Country: United States, Category: Politics
+2025-06-26 15:44:07,417 - DEBUG - Found keyword 'UK' for country 'United Kingdom'
+2025-06-26 15:44:07,417 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,417 - DEBUG - Detected Country: United Kingdom, Category: Technology
+2025-06-26 15:44:07,417 - DEBUG - Found keyword 'England' for country 'United Kingdom'
+2025-06-26 15:44:07,417 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,417 - DEBUG - Detected Country: United Kingdom, Category: Technology
+2025-06-26 15:44:07,417 - INFO - Filtered 46 items from https://timesofindia.indiatimes.com/rssfeedstopstories.cms
+2025-06-26 15:44:07,417 - DEBUG - Fetching: https://timesofindia.indiatimes.com/rssfeeds/-2128936835.cms
+2025-06-26 15:44:07,986 - DEBUG - Found keyword 'law' for category 'Politics'
+2025-06-26 15:44:07,986 - DEBUG - Detected Country: India, Category: Politics
+2025-06-26 15:44:07,986 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,986 - DEBUG - Detected Country: India, Category: Technology
+2025-06-26 15:44:07,987 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,987 - DEBUG - Detected Country: India, Category: Technology
+2025-06-26 15:44:07,987 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:44:07,987 - DEBUG - Detected Country: India, Category: General
+2025-06-26 15:44:07,987 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:07,987 - DEBUG - Detected Country: India, Category: Politics
+2025-06-26 15:44:07,987 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:07,988 - DEBUG - Detected Country: India, Category: Politics
+2025-06-26 15:44:07,988 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,988 - DEBUG - Detected Country: India, Category: Technology
+2025-06-26 15:44:07,988 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,988 - DEBUG - Detected Country: India, Category: Technology
+2025-06-26 15:44:07,988 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,988 - DEBUG - Detected Country: India, Category: Technology
+2025-06-26 15:44:07,989 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:07,989 - DEBUG - Detected Country: India, Category: Politics
+2025-06-26 15:44:07,989 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:44:07,989 - DEBUG - Detected Country: India, Category: General
+2025-06-26 15:44:07,989 - WARNING - Description not found in RSS item.
+2025-06-26 15:44:07,989 - DEBUG - Found keyword 'congress' for category 'Politics'
+2025-06-26 15:44:07,989 - DEBUG - Detected Country: India, Category: Politics
+2025-06-26 15:44:07,989 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:07,989 - DEBUG - Detected Country: India, Category: Politics
+2025-06-26 15:44:07,989 - WARNING - Description not found in RSS item.
+2025-06-26 15:44:07,989 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:44:07,989 - DEBUG - Detected Country: India, Category: General
+2025-06-26 15:44:07,990 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,990 - DEBUG - Detected Country: India, Category: Technology
+2025-06-26 15:44:07,990 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:44:07,990 - DEBUG - Detected Country: India, Category: General
+2025-06-26 15:44:07,990 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,990 - DEBUG - Detected Country: India, Category: Technology
+2025-06-26 15:44:07,990 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,990 - DEBUG - Detected Country: India, Category: Technology
+2025-06-26 15:44:07,990 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:07,990 - DEBUG - Detected Country: India, Category: Technology
+2025-06-26 15:44:07,991 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:07,991 - DEBUG - Detected Country: India, Category: Politics
+2025-06-26 15:44:07,991 - INFO - Filtered 20 items from https://timesofindia.indiatimes.com/rssfeeds/-2128936835.cms
+2025-06-26 15:44:07,991 - DEBUG - Fetching: https://timesofindia.indiatimes.com/rssfeeds/54829575.cms
+2025-06-26 15:44:08,681 - DEBUG - Detected Country: India, Category: Sport
+2025-06-26 15:44:08,682 - DEBUG - Detected Country: India, Category: Sport
+2025-06-26 15:44:08,682 - DEBUG - Detected Country: India, Category: Sport
+2025-06-26 15:44:08,682 - DEBUG - Detected Country: India, Category: Sport
+2025-06-26 15:44:08,683 - DEBUG - Detected Country: India, Category: Sport
+2025-06-26 15:44:08,683 - DEBUG - Detected Country: India, Category: Sport
+2025-06-26 15:44:08,683 - DEBUG - Detected Country: India, Category: Sport
+2025-06-26 15:44:08,683 - DEBUG - Detected Country: India, Category: Sport
+2025-06-26 15:44:08,684 - DEBUG - Detected Country: India, Category: Sport
+2025-06-26 15:44:08,684 - DEBUG - Detected Country: India, Category: Sport
+2025-06-26 15:44:08,684 - DEBUG - Detected Country: India, Category: Sport
+2025-06-26 15:44:08,684 - DEBUG - Detected Country: India, Category: Sport
+2025-06-26 15:44:08,685 - DEBUG - Detected Country: India, Category: Sport
+2025-06-26 15:44:08,685 - DEBUG - Detected Country: India, Category: Sport
+2025-06-26 15:44:08,685 - DEBUG - Detected Country: India, Category: Sport
+2025-06-26 15:44:08,685 - DEBUG - Detected Country: India, Category: Sport
+2025-06-26 15:44:08,685 - DEBUG - Detected Country: India, Category: Sport
+2025-06-26 15:44:08,686 - DEBUG - Detected Country: India, Category: Sport
+2025-06-26 15:44:08,686 - DEBUG - Detected Country: India, Category: Sport
+2025-06-26 15:44:08,686 - DEBUG - Detected Country: India, Category: Sport
+2025-06-26 15:44:08,686 - INFO - Filtered 20 items from https://timesofindia.indiatimes.com/rssfeeds/54829575.cms
+2025-06-26 15:44:08,686 - DEBUG - Fetching: https://www.france24.com/en/france/rss
+2025-06-26 15:44:10,525 - DEBUG - Found keyword 'senate' for category 'Politics'
+2025-06-26 15:44:10,526 - DEBUG - Detected Country: France, Category: Politics
+2025-06-26 15:44:10,526 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:10,526 - DEBUG - Detected Country: France, Category: Technology
+2025-06-26 15:44:10,526 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:10,526 - DEBUG - Detected Country: France, Category: Technology
+2025-06-26 15:44:10,526 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:10,526 - DEBUG - Detected Country: France, Category: Technology
+2025-06-26 15:44:10,527 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:10,527 - DEBUG - Detected Country: France, Category: Technology
+2025-06-26 15:44:10,527 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:10,527 - DEBUG - Detected Country: France, Category: Technology
+2025-06-26 15:44:10,527 - DEBUG - Found keyword 'election' for category 'Politics'
+2025-06-26 15:44:10,527 - DEBUG - Detected Country: France, Category: Politics
+2025-06-26 15:44:10,527 - DEBUG - Found keyword 'parliament' for category 'Politics'
+2025-06-26 15:44:10,527 - DEBUG - Detected Country: France, Category: Politics
+2025-06-26 15:44:10,528 - DEBUG - Found keyword 'election' for category 'Politics'
+2025-06-26 15:44:10,528 - DEBUG - Detected Country: France, Category: Politics
+2025-06-26 15:44:10,528 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:44:10,528 - DEBUG - Detected Country: France, Category: General
+2025-06-26 15:44:10,528 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:10,528 - DEBUG - Detected Country: France, Category: Technology
+2025-06-26 15:44:10,528 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:10,529 - DEBUG - Detected Country: France, Category: Technology
+2025-06-26 15:44:10,529 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:10,529 - DEBUG - Detected Country: France, Category: Politics
+2025-06-26 15:44:10,529 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:10,529 - DEBUG - Detected Country: France, Category: Politics
+2025-06-26 15:44:10,529 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:10,529 - DEBUG - Detected Country: France, Category: Politics
+2025-06-26 15:44:10,529 - WARNING - No category detected; defaulting to 'General'
+2025-06-26 15:44:10,529 - DEBUG - Detected Country: France, Category: General
+2025-06-26 15:44:10,530 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:10,530 - DEBUG - Detected Country: France, Category: Technology
+2025-06-26 15:44:10,530 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:10,530 - DEBUG - Detected Country: France, Category: Technology
+2025-06-26 15:44:10,530 - DEBUG - Found keyword 'election' for category 'Politics'
+2025-06-26 15:44:10,530 - DEBUG - Detected Country: France, Category: Politics
+2025-06-26 15:44:10,530 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:10,531 - DEBUG - Detected Country: France, Category: Technology
+2025-06-26 15:44:10,531 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:10,531 - DEBUG - Detected Country: France, Category: Technology
+2025-06-26 15:44:10,531 - DEBUG - Found keyword 'UN' for category 'Politics'
+2025-06-26 15:44:10,531 - DEBUG - Detected Country: France, Category: Politics
+2025-06-26 15:44:10,531 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:10,532 - DEBUG - Detected Country: France, Category: Technology
+2025-06-26 15:44:10,532 - DEBUG - Found keyword 'government' for category 'Politics'
+2025-06-26 15:44:10,532 - DEBUG - Detected Country: France, Category: Politics
+2025-06-26 15:44:10,532 - DEBUG - Found keyword 'election' for category 'Politics'
+2025-06-26 15:44:10,532 - DEBUG - Detected Country: France, Category: Politics
+2025-06-26 15:44:10,532 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:10,532 - DEBUG - Detected Country: France, Category: Technology
+2025-06-26 15:44:10,532 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:10,533 - DEBUG - Detected Country: France, Category: Technology
+2025-06-26 15:44:10,533 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:10,533 - DEBUG - Detected Country: France, Category: Technology
+2025-06-26 15:44:10,533 - DEBUG - Found keyword 'AI' for category 'Technology'
+2025-06-26 15:44:10,533 - DEBUG - Detected Country: France, Category: Technology
+2025-06-26 15:44:10,533 - DEBUG - Found keyword 'government' for category 'Politics'
+2025-06-26 15:44:10,533 - DEBUG - Detected Country: France, Category: Politics
+2025-06-26 15:44:10,533 - INFO - Filtered 30 items from https://www.france24.com/en/france/rss

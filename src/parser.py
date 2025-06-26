@@ -1,6 +1,11 @@
 # Import necessary libraries
 from bs4 import BeautifulSoup
 import requests
+from error_log import setup_logger
+
+# Setup logger for debugging
+logger = setup_logger(__name__)
+logger.info("Running parser to get request URLs.")
 
 # Create function for parsing RSS
 def get_rss_items(url):
@@ -12,7 +17,7 @@ def get_rss_items(url):
         response = requests.get(url, headers=headers, timeout=10)
     except:
         # Debugging
-        print(f"[ERROR] Fail to retrieve request for {url}")
+        logger.error(f"Fail to retrieve request for {url}")
 
     # Parses the information and transforms it into text for readability
     soup = BeautifulSoup(response.text, "lxml-xml")

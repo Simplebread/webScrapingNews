@@ -2,6 +2,10 @@
 import config as config
 import filter as filter
 import data_base as db
+from error_log import setup_logger
+
+# Setup logger for debugging
+logger = setup_logger(__name__)
 
 # Create Variable
 all_news = []
@@ -14,7 +18,7 @@ for feed in config.rss_feeds:
         all_news.extend(results)
     except:
         # Debugging
-        print(f"[ERROR] Skipping {feed['url']}")
+        logger.error(f"Skipping {feed['url']}")
 
 # Delete duplicate entries
 all_news = filter.detect_duplicate(all_news)
