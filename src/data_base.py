@@ -2,10 +2,17 @@ import sqlite3 as db
 import pandas as pd
 import os
 from error_log import setup_logger
+import hashlib
 
 # Setup logger for debugging
 logger = setup_logger(__name__)
 logger.info("Running data base creation and csv exportation.")
+
+# Function to generate hash for each article
+def generate_hash(title, url, description):
+    # Combine title, url, and description to create a unique string
+    data = f"{title}{url}{description}"
+    return hashlib.sha256(data.encode()).hexdigest()
 
 def upload_data_base(list):
     # Redirects the file back toward the data folder
@@ -21,6 +28,7 @@ def upload_data_base(list):
     cn.execute("""
         CREATE TABLE IF NOT EXISTS rss_feeds (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
+        hash TEXT UNIQUE,
         title TEXT,
         description TEXT,
         date TEXT,
@@ -33,11 +41,17 @@ def upload_data_base(list):
 
     # Insert all_news data
     for item in list:
+        # Generate the hash for the article
+        article_hash = generate_hash(item.get("title"), item.get("url"), item.get("description"))
+        
+        
+        # Insert data into the table along with the hash
         cn.execute("""
-            INSERT INTO rss_feeds (title, description, date, url, source, country, category)
-            VALUES (?, ?, ?, ?, ?, ?, ?)
+            INSERT OR IGNORE INTO rss_feeds (hash, title, description, date, url, source, country, category)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
             """, 
             (
+            article_hash,  # Insert the generated hash
             item.get("title"),
             item.get("description"),
             item.get("date"),

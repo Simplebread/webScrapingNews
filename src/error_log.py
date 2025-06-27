@@ -1,12 +1,12 @@
 # Import necessary libraries
 import logging
+from datetime import datetime
 
 # Create reusable logger function
 def setup_logger(name=None, log_file=None, level=logging.DEBUG):
     # Create variables
     name = __name__
-    log_file = f"logs/{name}.log"
-
+    log_file = f'logs/{datetime.now().strftime("%Y-%m-%d")}.log'
     # Create logger with name
     logger = logging.getLogger(name)
     logger.setLevel(level)
