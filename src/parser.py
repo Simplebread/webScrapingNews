@@ -2,23 +2,38 @@
 from bs4 import BeautifulSoup
 import requests
 from error_log import setup_logger
+import config
 
 # Setup logger for debugging
 logger = setup_logger(__name__)
-logger.info("Running parser to get request URLs.")
 
-# Create function for parsing RSS
-def get_rss_items(url):
-    # header to deal with HTTPS issue
-    headers = {"User-Agent": "Mozilla/5.0"}
+# This is your original function, it fetches a live URL and parses it.
+def get_rss_items_from_url(url):
+    logger.info(f"Fetching live RSS feed from: {url}")
+    headers = config.user_agent
 
-    # get the xml from the RSS link
+    # Request to rss links
     try:
         response = requests.get(url, headers=headers, timeout=10)
-    except:
-        # Debugging
-        logger.error(f"Fail to retrieve request for {url}")
+        response.raise_for_status()
+    except requests.exceptions.RequestException as e:
+        logger.error(f"Failed to retrieve request for {url}: {e}")
+        return []
 
-    # Parses the information and transforms it into text for readability
-    soup = BeautifulSoup(response.text, "lxml-xml")
-    return soup.find_all("item")
+    # This calls our new parsing function to avoid duplicating code
+    return parse_rss_content(response.content, source_url=url)
+
+
+# This function takes content that is already downloaded and parses it.
+def parse_rss_content(xml_content, source_url=""):
+    try:
+        soup = BeautifulSoup(xml_content, "lxml-xml")
+        items = soup.find_all("item")
+    
+        if not items:
+            logger.warning(f"No <item> tags found in content from {source_url}")
+    
+        return items
+    except Exception as e:
+        logger.error(f"Failed to parse XML content from {source_url}: {e}")
+        return []

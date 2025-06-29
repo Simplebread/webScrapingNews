@@ -1,5 +1,10 @@
+# User Agent
+user_agent = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
+}
 # RSS Links for news
 rss_feeds = [
+    # -----
     {
         "url": "https://feeds.bbci.co.uk/news/uk/rss.xml",
         "country": "United Kingdom",
@@ -24,21 +29,21 @@ rss_feeds = [
         "source": "BBC",
         "category": None
     },
-    #
+    # -----
     {
         "url": "https://www.cbc.ca/webfeed/rss/rss-canada",
         "country": None,
         "source": "CBC",
         "category": None
     },
-    #
+    # -----
     {
         "url": "https://www.aljazeera.com/xml/rss/all.xml",
         "country": None,
         "source": "Al Jazeera",
         "category": None
     },
-    #
+    # -----
     {
         "url": "https://abcnews.go.com/abcnews/topstories",
         "country": None,
@@ -51,14 +56,14 @@ rss_feeds = [
         "source": "ABC",
         "category": "Technology"
     },
-    #
+    # -----
     {
         "url": "https://www.nippon.com/en/rss-all/",
         "country": "Japan",
         "source": "Nippon.com",
         "category": None
     },
-    #
+    # -----
     {
         "url": "https://www.abc.net.au/news/feed/2942460/rss.xml",
         "country": "Australia",
@@ -77,14 +82,14 @@ rss_feeds = [
         "source": "ABC Australia",
         "category": None
     },
-    #
+    # -----
     {
         "url": "https://mexiconewsdaily.com/feed/",
         "country": "Mexico",
         "source": "Mexico News Daily",
         "category": None
     },
-    #
+    # -----
     {
         "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms",
         "country": None,
@@ -103,7 +108,7 @@ rss_feeds = [
         "source": "Times of India",
         "category": "Sport"
     },
-    #
+    # -----
     {
         "url": "https://www.france24.com/en/france/rss",
         "country": "France",

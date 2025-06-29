@@ -1,3 +1,4 @@
+# Import necessary libraries
 import sqlite3 as db
 import pandas as pd
 import os
@@ -51,7 +52,7 @@ def upload_data_base(list):
             VALUES (?, ?, ?, ?, ?, ?, ?, ?)
             """, 
             (
-            article_hash,  # Insert the generated hash
+            article_hash,
             item.get("title"),
             item.get("description"),
             item.get("date"),

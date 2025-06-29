@@ -3,19 +3,19 @@ import config as config
 import parser as parser
 from bs4 import BeautifulSoup
 from error_log import setup_logger
-import historical as historical
+import historical
 
 # Setup logger for debugging
 logger = setup_logger(__name__)
 logger.info("Running filter on new RSS feed and Wayback Machine snapshots.")
 
 # Filter using keywords
-def filtered_list(url, source, country, category, historical=False, start_date=None, end_date=None):
+def filtered_list(url, source, country, category, is_historical=False, start_date=None, end_date=None):
     logger.debug(f"Fetching: {url}")
 
     filtered_data = []
 
-    if historical:
+    if is_historical:
         # Get historical URLs and filter them by date range
         logger.info("Fetching historical documents...")
         historical_items = historical.fetch_historical_documents(url, start_date, end_date)
@@ -73,6 +73,8 @@ def process_item(item, source, country, category):
         "category": detected_category
     }
 
+    # Ensure that filtered_item is appended
+    logger.debug(f"Appending item: {filtered_item['title']}")
     return [filtered_item]
 
 # Function to detect country

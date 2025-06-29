@@ -13,10 +13,10 @@ all_news = []
 # Store results into variable
 for feed in config.rss_feeds:
     try:
-        # If you want to scrape historical data, set historical=True and provide date range
-        historical = True  # Set to True if historical data is needed
-        start_date = "2023-06-01"  # Set the start date if historical is True
-        end_date = "2023-06-10"    # Set the end date if historical is True
+        # If you want to scrape historical data, set is_historical=True and provide date range
+        is_historical = True
+        start_date = "2024-06-01"
+        end_date = "2024-06-10"
         
         # Inputs data from config.py to be processed
         results = filter.filtered_list(
@@ -24,9 +24,9 @@ for feed in config.rss_feeds:
             feed["source"], 
             feed["country"], 
             feed["category"], 
-            historical=historical,  # Pass the historical flag
-            start_date=start_date,  # Pass start_date for historical
-            end_date=end_date       # Pass end_date for historical
+            is_historical=is_historical,
+            start_date=start_date,
+            end_date=end_date
         )
         all_news.extend(results)
     except Exception as e:
@@ -37,4 +37,5 @@ for feed in config.rss_feeds:
 all_news = filter.detect_duplicate(all_news)
 
 # Create data base using SQL Lite
+logger.info(f"Total items collected: {len(all_news)}")
 db.upload_data_base(all_news)

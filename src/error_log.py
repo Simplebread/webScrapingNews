@@ -16,15 +16,16 @@ def setup_logger(name=None, log_file=None, level=logging.DEBUG):
         # File handler
         file_handler = logging.FileHandler(log_file)
         file_handler.setFormatter(logging.Formatter(
-            "%(asctime)s - %(levelname)s - %(message)s"
+            "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
         ))
 
-        # Console handler (optional)
+        # Console handler
         console_handler = logging.StreamHandler()
         console_handler.setFormatter(logging.Formatter(
-            "[%(levelname)s] %(message)s"
+            "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
         ))
 
+        # Adding the handlers to the logger
         logger.addHandler(file_handler)
         logger.addHandler(console_handler)
 
