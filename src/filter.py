@@ -1,20 +1,39 @@
+# ========================================================================================
+# filter.py
+#
+# FILE OVERVIEW:
+# This module is the "brain" of the data processing pipeline. Its main responsibility
+# is to take the raw, parsed data (a list of article objects), and then clean,
+# enrich, and structure it. It extracts key information like title and description,
+# removes unwanted HTML, and intelligently assigns a country and category based on
+# keywords defined in the config file. It also handles the initial de-duplication
+# of articles before they are sent to the database.
+# ========================================================================================
+
 # Import necessary libraries
-import config as config
+import config
 import parser as parser
 from bs4 import BeautifulSoup
 from error_log import setup_logger
 import historical
+import spacy_detect
 
 # Setup logger for debugging
 logger = setup_logger(__name__)
 logger.info("Running filter on new RSS feed and Wayback Machine snapshots.")
 
 # Filter using keywords
-def filtered_list(url, source, country, category, is_historical=False, start_date=None, end_date=None):
+def filtered_list(url, source, pre_defined_country, pre_defined_category, is_historical=False, start_date=None, end_date=None):
+    """
+    Acts as the main controller for processing a single feed URL.
+    It decides whether to call the historical module or the live parser,
+    then sends the results to be processed item by item.
+    """
     logger.debug(f"Fetching: {url}")
 
     filtered_data = []
 
+    # --- Logic Branch: Historical vs. Live ---
     if is_historical:
         # Get historical URLs and filter them by date range
         logger.info("Fetching historical documents...")
@@ -22,93 +41,87 @@ def filtered_list(url, source, country, category, is_historical=False, start_dat
         
         # Process the historical items
         for item in historical_items:
-            filtered_data.extend(process_item(item, source, country, category))
+            filtered_data.extend(process_item(item, source, pre_defined_country, pre_defined_category))
     else:
         # Regular RSS Feed processing
-        items = parser.get_rss_items(url)
+        items = parser.get_rss_items_from_url(url)
         
-        # Process the RSS items
+        # --- Item Processing ---
+        # Loop through each article <item> that was found.
         for item in items:
-            filtered_data.extend(process_item(item, source, country, category))
+            filtered_data.extend(process_item(item, source, pre_defined_country, pre_defined_category))
 
     # Debugging
     logger.info(f"Filtered {len(filtered_data)} items from {url}")
     return filtered_data
 
 # Function to process individual items (RSS or historical)
-def process_item(item, source, country, category):
-    filtered_item = {}
-
-    # Extract title and description
+def process_item(item, source, pre_defined_country, pre_defined_category):
+    """
+    Takes a single raw article <item> and transforms it into a clean,
+    structured dictionary using NLP for detection.
+    """
     title_tag = item.find("title")
     title = title_tag.text.strip() if title_tag else ""
-    if not title:
-        logger.warning("Title not found in item.")
 
     desc_tag = item.find("description")
-    description = desc_tag.text.strip() if desc_tag else ""
-    if not description:
-        logger.warning("Description not found in item.") 
+    description_raw = desc_tag.text.strip() if desc_tag else ""
 
-    # Parse again to get rid of complicated ugly news RSS inside description
-    soup = BeautifulSoup(description, "html.parser")
-    for tag in soup(["img", "style", "script"]):
-        tag.decompose()
-    description = soup.get_text(separator=" ", strip=True)
+    soup = BeautifulSoup(description_raw, "html.parser")
+    description_clean = soup.get_text(separator=" ", strip=True)
 
-    # Detect country and category dynamically
-    detected_country = country if country else detect_country(title, description)
-    detected_category = category if category else detect_category(title, description)
+    # Create combined text for NLP analysis
+    text_for_analysis = f"{title}. {description_clean}"
 
-    logger.debug(f"Detected Country: {detected_country}, Category: {detected_category}")
+    # Detect country
+    detected_country = pre_defined_country if pre_defined_country else spacy_detect.detect_country_ner(text_for_analysis)
 
-    # Build the filtered item
+    # 2. Detect Category: Use the pre-defined category if it exists, otherwise use Zero-Shot.
+    # Define our candidate categories for the model to choose from.
+    candidate_categories = config.candidate_categories
+    detected_category = pre_defined_category if pre_defined_category else spacy_detect.detect_category_zero_shot(text_for_analysis, candidate_categories)
+
+    # Assemble the final, clean dictionary for this article.
     filtered_item = {
         "title": title,
-        "description": description,
-        "date": item.find("pubDate").text if item.find("pubDate") else "",
-        "url": item.find("link").text if item.find("link") else "",
+        "description": description_clean,
+        "date": item.find("pubDate").text.strip() if item.find("pubDate") else "",
+        "url": item.find("link").text.strip() if item.find("link") else "",
         "source": source,
         "country": detected_country,
         "category": detected_category
     }
 
-    # Ensure that filtered_item is appended
-    logger.debug(f"Appending item: {filtered_item['title']}")
     return [filtered_item]
 
-# Function to detect country
-def detect_country(title, description):
-    content = f"{title} {description}".lower()
-    for country, keywords in config.key_word_country.items():
-        for keyword in keywords:
-            if keyword.lower() in content:
-                logger.debug(f"Found keyword '{keyword}' for country '{country}'")
-                return country
-    logger.warning("No country detected; defaulting to 'Unknown'")
-    return "Unknown"
+def detect_duplicate(items_list):
+    """
+    Removes duplicate articles from a list based on the article title.
+    This version uses a Python 'set' for highly efficient lookups, which avoids
+    the bugs and performance issues of a nested while loop.
+    """
+    seen_titles = set()
+    unique_items = []
 
-# Function to detect category
-def detect_category(title, description):
-    content = f"{title} {description}".lower()
-    for category, keywords in config.key_word_category.items():
-        for keyword in keywords:
-            if keyword.lower() in content:
-                logger.debug(f"Found keyword '{keyword}' for category '{category}'")
-                return category
-    logger.warning("No category detected; defaulting to 'General'")
-    return "General"
+    # Loop through each article dictionary in the list.
+    for item in items_list:
+        # Check if the item is a dictionary and has a 'title' key to prevent errors.
+        if isinstance(item, dict) and "title" in item:
+            # Normalize the title for a consistent comparison (lowercase, no extra spaces).
+            normalized_title = item["title"].strip().lower()
+            
+            # If we have NOT seen this title before, it's a unique article.
+            if normalized_title not in seen_titles:
+                # Add the title to our set of seen titles.
+                seen_titles.add(normalized_title)
+                # Add the unique article dictionary to our new list.
+                unique_items.append(item)
+        else:
+            # This warning is the key to identifying bad data in the list.
+            logger.warning(f"Skipping an invalid item during de-duplication: {item}")
+            
+    duplicates_removed = len(items_list) - len(unique_items)
+    if duplicates_removed > 0:
+        logger.info(f"Removed {duplicates_removed} duplicate articles found across all feeds.")
 
-# Function to detect duplicates in news and article entries
-def detect_duplicate(list):
-    new_list = list
-    i = 0
-    while i < len(new_list):
-        j = i + 1
-        while j < len(new_list):
-            if new_list[i]["title"].strip().lower() == new_list[j]["title"].strip().lower():
-                new_list.pop(j)
-            else:
-                j += 1
-        i += 1
-    return new_list
+    return unique_items

@@ -1,3 +1,14 @@
+# ========================================================================================
+# data_base.py
+#
+# FILE OVERVIEW:
+# This module is the final step in the pipeline. It is responsible for all
+# interactions with the SQLite database. Its job is to take the final, cleaned
+# list of articles, create a unique hash for each one, and then insert them into
+# the database, efficiently ignoring any duplicates. It also exports the final
+# database content to a CSV file for easy viewing.
+# ========================================================================================
+
 # Import necessary libraries
 import sqlite3 as db
 import pandas as pd
@@ -11,11 +22,20 @@ logger.info("Running data base creation and csv exportation.")
 
 # Function to generate hash for each article
 def generate_hash(title, url, description):
+    """
+    Creates a unique and consistent SHA256 hash for an article.
+    This hash acts as a unique ID. By combining the title, URL, and description,
+    we ensure that even if one of these fields changes slightly, the hash will be different.
+    """
     # Combine title, url, and description to create a unique string
     data = f"{title}{url}{description}"
     return hashlib.sha256(data.encode()).hexdigest()
 
 def upload_data_base(list):
+    """
+    Connects to the SQLite database, creates the table if it doesn't exist,
+    and inserts all the provided articles.
+    """
     # Redirects the file back toward the data folder
     db_path = os.path.join(os.path.dirname(__file__), "..", "data", "sqlite.db")
     os.makedirs(os.path.dirname(db_path), exist_ok=True)

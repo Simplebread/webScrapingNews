@@ -78,6 +78,7 @@ Provide step-by-step instructions on how to install and set up your project.
 3.  **Install Python packages**
     ```bash
     pip install -r requirements.txt
+    python3 -m spacy download en_core_web_sm
     ```
 4.  **Configure (if applicable)**
     * Add/Remove RSS news feed (URL) in `config.py` and add more onto the keywords

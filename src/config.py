@@ -1,8 +1,36 @@
-# User Agent
+# ========================================================================================
+# config.py
+#
+# FILE OVERVIEW:
+# This file acts as the central configuration hub for the entire application.
+# It does not contain any executable logic. Instead, it stores all the key settings,
+# lists, and data mappings in one easy-to-find place. This design makes the
+# scraper highly configurable, as you can add new feeds or change keywords
+# without touching the core application code.
+# ========================================================================================
+
+# --- Network Configuration ---
+
+# Defines the User-Agent string for all network requests.
+# This makes our script look like a standard web browser, which is more
+# respectful to servers and helps avoid being blocked.
 user_agent = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
 }
-# RSS Links for news
+
+# --- Spacy Configuration ---
+
+# Categories for RSS in which spacy will pick on
+candidate_categories = ["Politics", "Business", "Technology", "Sports", "Health", "Entertainment", "World News"]
+
+
+# --- RSS Feed Definitions ---
+
+# A list of dictionaries, where each dictionary represents one RSS feed to be scraped.
+# - "url": The web address of the RSS feed.
+# - "country": The default country for this source. Can be None if it needs to be detected.
+# - "source": The name of the news publisher (e.g., "BBC").
+# - "category": The default category. Can be None if it needs to be detected.
 rss_feeds = [
     # -----
     {
@@ -108,6 +136,72 @@ rss_feeds = [
         "source": "Times of India",
         "category": "Sport"
     },
+    {
+        "url": "https://indianexpress.com/section/opinion/40-years-ago/feed/",
+        "country": "India",
+        "source": "The Indian Express",
+        "category": None
+    },
+    {
+        "url": "https://indianexpress.com/section/india/feed/",
+        "country": "India",
+        "source": "The Indian Express",
+        "category": None
+    },
+    {
+        "url": "https://indianexpress.com/section/politics/feed/",
+        "country": "India",
+        "source": "The Indian Express",
+        "category": "Politics"
+    },
+    {
+        "url": "https://indianexpress.com/section/business/feed/",
+        "country": "India",
+        "source": "The Indian Express",
+        "category": None
+    },
+    {
+        "url": "https://indianexpress.com/section/world/feed/",
+        "country": "India",
+        "source": "The Indian Express",
+        "category": None
+    },
+    {
+        "url": "https://indianexpress.com/section/technology/feed/",
+        "country": "India",
+        "source": "The Indian Express",
+        "category": "Technology"
+    },
+    {
+        "url": "https://indianexpress.com/section/sports/feed/",
+        "country": "India",
+        "source": "The Indian Express",
+        "category": None
+    },
+    {
+        "url": "https://indianexpress.com/section/entertainment/feed/",
+        "country": "India",
+        "source": "The Indian Express",
+        "category": None
+    },
+    {
+        "url": "https://indianexpress.com/section/explained/feed/",
+        "country": "India",
+        "source": "The Indian Express",
+        "category": None
+    },
+    {
+        "url": "https://indianexpress.com/section/opinion/editorials/feed/",
+        "country": "India",
+        "source": "The Indian Express",
+        "category": None
+    },
+    {
+        "url": "https://indianexpress.com/section/cities/feed/",
+        "country": "India",
+        "source": "The Indian Express",
+        "category": None
+    },
     # -----
     {
         "url": "https://www.france24.com/en/france/rss",
@@ -116,216 +210,4 @@ rss_feeds = [
         "category": None
     }
 ]
-
-# Categories with keys and dictionaries
-key_word_category = {
-    "Technology": [
-        "tech", "apple", "AI", "robot", "software",
-        "cloud", "data", "cyber", "quantum", "satellite",
-        "drone", "processor", "chip", "emissions", "robotics"
-    ],
-    "Health": [
-        "health", "vaccine", "covid", "covid-19",
-        "mental", "medicine", "pandemic", "disease",
-        "doctor", "hospital", "cancer", "diabetes"
-    ],
-    "Politics": [
-        "election", "government", "policy", "senate",
-        "democracy", "parliament", "congress", "law",
-        "UN", "NATO", "tariff", "sanction", "budget",
-        "campaign"
-    ],
-    "Sports": [
-        "football", "soccer", "olympics", "NBA", "tennis",
-        "cricket", "rugby", "golf", "F1", "cup", "league"
-    ]
-}
-
-# Key words for countries
-key_word_country = {
-    "United Kingdom": [
-        "UK", "Britain", "British", "London", "Rishi Sunak", "Downing Street", 
-        "England", "Scotland", "Wales", "Northern Ireland", "Westminster"
-    ],
-    "United States": [
-        "USA", "US", "America", "American", "White House", "Biden", "Trump", 
-        "Washington", "New York", "Los Angeles", "Pentagon", "Capitol", "Senate"
-    ],
-    "Canada": [
-        "Canada", "Canadian", "Ottawa", "Toronto", "Vancouver", "Trudeau", 
-        "Alberta", "Quebec", "Liberal Party", "RCMP"
-    ],
-    "China": [
-        "China", "Chinese", "Beijing", "Xi Jinping", "CCP", "Shanghai", 
-        "Hong Kong", "Taiwan", "Great Wall", "Renminbi"
-    ],
-    "Myanmar": [
-        "Myanmar", "Burma", "Burmese", "Yangon", "Naypyidaw", "Min Aung Hlaing", 
-        "NLD", "Aung San Suu Kyi", "Tatmadaw", "Sagaing", "Junta"
-    ],
-    "Russia": [
-        "Russia", "Russian", "Moscow", "Putin", "Kremlin", "Ukraine war", 
-        "Wagner", "Red Square", "FSB", "Donetsk"
-    ],
-    "India": [
-        "India", "Indian", "Delhi", "Modi", "Mumbai", "Hindustan", "BJP", 
-        "Kolkata", "Kerala", "Himalayas"
-    ],
-    "France": [
-        "France", "French", "Paris", "Macron", "Élysée", "Louvre", "Marseille", 
-        "Provence", "Bastille", "Sorbonne"
-    ],
-    "Germany": [
-        "Germany", "German", "Berlin", "Scholz", "Bundestag", "Munich", 
-        "Frankfurt", "Hamburg", "Bavaria"
-    ],
-    "Japan": [
-        "Japan", "Japanese", "Tokyo", "Yen", "Fumio Kishida", "Osaka", 
-        "Kyoto", "Shinkansen", "Samurai", "Anime"
-    ],
-    "South Korea": [
-        "South Korea", "Korea", "Korean", "Seoul", "Yoon Suk-yeol", 
-        "Samsung", "Hyundai", "K-pop", "DMZ", "Pyongyang"
-    ],
-    "Australia": [
-        "Australia", "Australian", "Canberra", "Sydney", "Melbourne", 
-        "Albanese", "Outback", "Down Under", "ANZAC"
-    ],
-    "Brazil": [
-        "Brazil", "Brasília", "Rio de Janeiro", "São Paulo", "Lula", 
-        "Amazon", "Carnival", "Favelas", "Petrobras"
-    ],
-    "South Africa": [
-        "South Africa", "African", "Johannesburg", "Cape Town", 
-        "Ramaphosa", "ANC", "Apartheid", "Zulu", "Durban"
-    ],
-    "Ukraine": [
-        "Ukraine", "Ukrainian", "Kyiv", "Zelensky", "Donbas", 
-        "Lviv", "Dnipro", "Kharkiv", "Mariupol"
-    ],
-    "Italy": [
-        "Italy", "Italian", "Rome", "Milan", "Florence", "Naples", 
-        "Pasta", "Colosseum", "Meloni", "Vatican"
-    ],
-    "Mexico": [
-        "Mexico", "Mexican", "Mexico City", "AMLO", "Cartel", 
-        "Guadalajara", "Tijuana", "Peso", "Cancun"
-    ],
-    "Philippines": [
-        "Philippines", "Filipino", "Manila", "Duterte", "Marcos", 
-        "Visayas", "Mindanao", "Tagalog", "Cebu", "Davao"
-    ],
-    "Indonesia": [
-        "Indonesia", "Indonesian", "Jakarta", "Jokowi", "Bali", 
-        "Java", "Sumatra", "Sulawesi", "Garuda", "Rupiah"
-    ],
-    "Pakistan": [
-        "Pakistan", "Pakistani", "Islamabad", "Karachi", "Lahore", 
-        "Imran Khan", "Punjab", "Urdu", "Khyber", "Sindh"
-    ],
-    "Bangladesh": [
-        "Bangladesh", "Bangladeshi", "Dhaka", "Sheikh Hasina", 
-        "Chittagong", "Bengali", "Padma", "Rohingya"
-    ],
-    "Turkey": [
-        "Turkey", "Turkish", "Ankara", "Istanbul", "Erdogan", 
-        "Bosporus", "Lira", "Hagia Sophia", "Atatürk"
-    ],
-    "Saudi Arabia": [
-        "Saudi Arabia", "Saudi", "Riyadh", "MBS", "Mecca", "Medina", 
-        "Aramco", "Hajj", "Oil", "Quran"
-    ],
-    "Iran": [
-        "Iran", "Tehran", "Persian", "Ayatollah", "Khamenei", 
-        "Revolutionary Guard", "Shia", "Sanctions", "Nuclear"
-    ],
-    "Israel": [
-        "Israel", "Israeli", "Jerusalem", "Tel Aviv", "Netanyahu", 
-        "IDF", "Gaza", "West Bank", "Hebrew", "Knesset"
-    ],
-    "Thailand": [
-        "Thailand", "Thai", "Bangkok", "Chiang Mai", "Bhumibol", 
-        "Prayut", "Baht", "Phuket", "Siam"
-    ],
-    "Vietnam": [
-        "Vietnam", "Vietnamese", "Hanoi", "Ho Chi Minh", 
-        "Da Nang", "Communist Party", "Mekong", "Dong", "Saigon"
-    ],
-    "Argentina": [
-        "Argentina", "Argentinian", "Buenos Aires", "Messi", 
-        "Patagonia", "Peso", "Maradona", "Tango"
-    ],
-    "Nigeria": [
-        "Nigeria", "Nigerian", "Abuja", "Lagos", "Buhari", 
-        "Yoruba", "Hausa", "Igbo", "Naira", "Boko Haram"
-    ],
-    "Egypt": [
-        "Egypt", "Egyptian", "Cairo", "Sisi", "Nile", "Pyramid", 
-        "Pharaoh", "Alexandria", "Giza", "Suez"
-    ],
-    "Spain": [
-        "Spain", "Spanish", "Madrid", "Barcelona", "Sánchez", 
-        "Catalonia", "Andalusia", "Basque", "Euro", "Iberia"
-    ],
-    "Poland": [
-        "Poland", "Polish", "Warsaw", "Duda", "Krakow", 
-        "Solidarity", "Gdańsk", "Zloty", "PiS"
-    ],
-    "Malaysia": [
-        "Malaysia", "Malaysian", "Kuala Lumpur", "Anwar", 
-        "Sabah", "Sarawak", "Malay", "Ringgit"
-    ],
-    "Vietnam": [
-        "Vietnam", "Vietnamese", "Hanoi", "Ho Chi Minh", 
-        "Da Nang", "Saigon", "Mekong", "Dong", "Communist Party"
-    ],
-    "Sweden": [
-        "Sweden", "Swedish", "Stockholm", "Kristersson", 
-        "Nobel", "IKEA", "Scandinavia", "Krona"
-    ],
-    "Norway": [
-        "Norway", "Norwegian", "Oslo", "Støre", "Fjord", 
-        "NATO", "Kroner", "Scandinavian"
-    ],
-    "Greece": [
-        "Greece", "Greek", "Athens", "Tsipras", "Mitsotakis", "Acropolis",
-        "Eurozone", "Olympics", "Aegean", "Parthenon"
-    ],
-    "Iraq": [
-        "Iraq", "Iraqi", "Baghdad", "Mosul", "Basra", "Kurdistan",
-        "Shiite", "Sunni", "Saddam Hussein", "Green Zone"
-    ],
-    "Syria": [
-        "Syria", "Syrian", "Damascus", "Aleppo", "Assad", "Homs",
-        "ISIS", "Kurds", "Idlib", "Golan"
-    ],
-    "Lebanon": [
-        "Lebanon", "Lebanese", "Beirut", "Hezbollah", "Cedar", "Michel Aoun",
-        "Port Explosion", "Hariri", "Tripoli"
-    ],
-    "Afghanistan": [
-        "Afghanistan", "Afghan", "Kabul", "Taliban", "Pashtun", "Hazaras",
-        "Burqa", "NATO withdrawal", "Ashraf Ghani"
-    ],
-    "North Korea": [
-        "North Korea", "Pyongyang", "Kim Jong-un", "DPRK", "Demilitarized Zone",
-        "Nuclear test", "Hermit Kingdom", "Missile launch"
-    ],
-    "Colombia": [
-        "Colombia", "Colombian", "Bogotá", "Medellín", "Cali", "FARC",
-        "Cartel", "Peso", "Duque", "Petro"
-    ],
-    "Venezuela": [
-        "Venezuela", "Venezuelan", "Caracas", "Maduro", "Bolivar", "Chávez",
-        "PDVSA", "Hyperinflation", "Opposition protest"
-    ],
-    "Chile": [
-        "Chile", "Chilean", "Santiago", "Pinochet", "Boric", "Andes",
-        "Constitutional reform", "Valparaíso"
-    ],
-    "Peru": [
-        "Peru", "Peruvian", "Lima", "Machu Picchu", "Quechua", "Pedro Castillo",
-        "Cusco", "Andean", "Inca"
-    ]
-}
 
