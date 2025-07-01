@@ -33,8 +33,8 @@ for feed in config.rss_feeds:
         # This section determines whether to fetch live news or historical news.
         # True for historical scraping false for the latter
         is_historical = True
-        start_date = "2019-01-01"
-        end_date = "2025-01-01"
+        start_date = "2025-01-01"
+        end_date = "2025-02-02"
 
         # Call the main filtering function, which acts as the entry point for the core logic.
         # It passes all the necessary information for a single feed to be processed.
