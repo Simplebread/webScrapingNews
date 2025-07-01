@@ -7,3 +7,5 @@ waybackpy==3.0.6
 spacy==3.8.7
 transformers==4.53.0
 torch==2.7.0
+python-dateutil==2.9.0.post0
+pycountry==24.6.1

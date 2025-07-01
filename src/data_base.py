@@ -96,6 +96,23 @@ def upload_data_base(list):
     # Output as CSV file for viewing    
     df.to_csv(csv_path, index=False, encoding="utf-8")
 
+    # Summary Statistic
+    logger.info("Generating and exporting summary analytics...")
+    
+    # Category Summary
+    category_summary_path = os.path.join(os.path.dirname(__file__), "..", "data", "category_summary.csv")
+    category_counts = df['category'].value_counts().reset_index()
+    category_counts.columns = ['Category', 'Article_Count']
+    category_counts.to_csv(category_summary_path, index=False)
+    logger.info(f"Successfully exported category summary to {category_summary_path}")
+
+    # Country Summary
+    country_summary_path = os.path.join(os.path.dirname(__file__), "..", "data", "country_summary.csv")
+    country_counts = df['country'].value_counts().reset_index()
+    country_counts.columns = ['Country', 'Article_Count']
+    country_counts.to_csv(country_summary_path, index=False)
+    logger.info(f"Successfully exported country summary to {country_summary_path}")
+
     # Close the connection and cursor
     cn.close()
     conn.close()

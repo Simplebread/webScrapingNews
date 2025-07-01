@@ -22,7 +22,9 @@ user_agent = {
 
 # Categories for RSS in which spacy will pick on
 candidate_categories = ["Politics", "Business", "Technology", "Sports", "Health", "Entertainment", "World News"]
-
+is_historical = False
+start_date = "2025-01-01"
+end_date = "2025-02-02"
 
 # --- RSS Feed Definitions ---
 

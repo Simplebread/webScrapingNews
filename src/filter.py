@@ -17,6 +17,7 @@ from bs4 import BeautifulSoup
 from error_log import setup_logger
 import historical
 import spacy_detect
+from dateutil.parser import parse as parse_date
 
 # Setup logger for debugging
 logger = setup_logger(__name__)
@@ -73,25 +74,24 @@ def process_item(item, source, pre_defined_country, pre_defined_category):
     # Create combined text for NLP analysis
     text_for_analysis = f"{title}. {description_clean}"
 
-    # Detect country
-    detected_country = pre_defined_country if pre_defined_country else spacy_detect.detect_country_ner(text_for_analysis)
-
-    # 2. Detect Category: Use the pre-defined category if it exists, otherwise use Zero-Shot.
     # Define our candidate categories for the model to choose from.
     candidate_categories = config.candidate_categories
     detected_category = pre_defined_category if pre_defined_category else spacy_detect.detect_category_zero_shot(text_for_analysis, candidate_categories)
+    detected_country = pre_defined_country if pre_defined_country else spacy_detect.detect_country_ner(text_for_analysis)
 
+    raw_date = item.find("pubDate").text.strip() if item.find("pubDate") else ""
+    normalized_date = normalize_date_format(raw_date)
+    
     # Assemble the final, clean dictionary for this article.
     filtered_item = {
         "title": title,
         "description": description_clean,
-        "date": item.find("pubDate").text.strip() if item.find("pubDate") else "",
+        "date": normalized_date,
         "url": item.find("link").text.strip() if item.find("link") else "",
         "source": source,
         "country": detected_country,
         "category": detected_category
     }
-
     return [filtered_item]
 
 def detect_duplicate(items_list):
@@ -125,3 +125,19 @@ def detect_duplicate(items_list):
         logger.info(f"Removed {duplicates_removed} duplicate articles found across all feeds.")
 
     return unique_items
+
+def normalize_date_format(date_string):
+    """
+    Parses a date string in almost any format and returns it as 'YYYY-MM-DD'.
+    """
+    if not date_string:
+        return ""
+    try:
+        # Use dateutil.parser to intelligently parse the date string.
+        dt_object = parse_date(date_string)
+        # Format the datetime object into a consistent string format.
+        return dt_object.strftime('%Y-%m-%d')
+    except (ValueError, TypeError):
+        # If the date string is un-parseable, log a warning and return it as is.
+        logger.warning(f"Could not parse date: '{date_string}'. Leaving as is.")
+        return date_string

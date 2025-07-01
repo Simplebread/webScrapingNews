@@ -32,9 +32,9 @@ for feed in config.rss_feeds:
         # --- Scraping Mode Configuration ---
         # This section determines whether to fetch live news or historical news.
         # True for historical scraping false for the latter
-        is_historical = True
-        start_date = "2025-01-01"
-        end_date = "2025-02-02"
+        is_historical = config.is_historical
+        start_date = config.start_date
+        end_date = config.end_date
 
         # Call the main filtering function, which acts as the entry point for the core logic.
         # It passes all the necessary information for a single feed to be processed.
@@ -71,5 +71,4 @@ logger.info(f"Total unique items collected from all sources: {len(all_news)}")
 
 # Pass the final, clean list of articles to the database module to be saved.
 data_base.upload_data_base(all_news)
-
 logger.info("Scraping process completed successfully.")
