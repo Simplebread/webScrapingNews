@@ -21,18 +21,20 @@ user_agent = {
 # --- Spacy Configuration ---
 
 # Categories for RSS in which spacy will pick on
-candidate_categories = ["Politics", "Business", "Technology", "Sports", "Health", "Entertainment", "World News"]
+candidate_categories = [
+    "Politics", "Elections", "Business", "Finance", "Technology", "Health", "Science",
+    "Sports", "Entertainment", "Culture", "World News", "Environment", "Climate Change",
+    "Legal", "Social Issues", "Education", "Human Rights", "Conflict"
+]
+# Run conditions
 is_historical = False
 start_date = "2025-01-01"
 end_date = "2025-02-02"
+time=3
 
 # --- RSS Feed Definitions ---
 
 # A list of dictionaries, where each dictionary represents one RSS feed to be scraped.
-# - "url": The web address of the RSS feed.
-# - "country": The default country for this source. Can be None if it needs to be detected.
-# - "source": The name of the news publisher (e.g., "BBC").
-# - "category": The default category. Can be None if it needs to be detected.
 rss_feeds = [
     # -----
     {
@@ -213,3 +215,151 @@ rss_feeds = [
     }
 ]
 
+# ========================================================================================
+# --- KEYWORD DICTIONARIES FOR FALLBACK SYSTEM ---
+# These lists are used ONLY if the primary NLP model fails to make a detection.
+# They are designed to catch obvious cases.
+# ========================================================================================
+
+# --- Country Keyword Dictionary ---
+# A dictionary used to automatically detect the country of an article as a backup.
+key_word_country = {
+    "United States": [
+        "US", "U.S.", "USA", "America", "American", "Washington D.C.", "White House",
+        "Congress", "Senate", "Pentagon", "New York", "California", "Texas", "Florida",
+        "Biden", "Trump", "Federal Reserve", "FBI", "CIA", "NASDAQ", "Wall Street"
+    ],
+    "United Kingdom": [
+        "UK", "U.K.", "Britain", "British", "England", "London", "Scotland", "Wales",
+        "Northern Ireland", "Parliament", "Downing Street", "NHS", "Sunak", "Starmer",
+        "Brexit", "Westminster", "Bank of England"
+    ],
+    "Canada": [
+        "Canada", "Canadian", "Ottawa", "Toronto", "Vancouver", "Montreal", "Quebec",
+        "Trudeau", "Parliament Hill", "RCMP"
+    ],
+    "Australia": [
+        "Australia", "Australian", "Canberra", "Sydney", "Melbourne", "Aussie",
+        "Albanese", "Down Under", "ASX"
+    ],
+    "China": [
+        "China", "Chinese", "Beijing", "Shanghai", "Xi Jinping", "CCP",
+        "Communist Party", "Yuan", "Hong Kong", "Taiwan", "Shenzhen", "Huawei"
+    ],
+    "India": [
+        "India", "Indian", "New Delhi", "Mumbai", "Modi", "BJP", "Congress Party",
+        "Bollywood", "Rupee", "Bangalore", "Kolkata"
+    ],
+    "Russia": [
+        "Russia", "Russian", "Moscow", "Kremlin", "Putin", "Siberia", "Gazprom",
+        "Soviet", "St. Petersburg", "FSB", "Rouble"
+    ],
+    "Ukraine": [
+        "Ukraine", "Ukrainian", "Kyiv", "Zelenskyy", "Donbas", "Crimea", "Lviv",
+        "Kharkiv", "Odessa"
+    ],
+    "Germany": [
+        "Germany", "German", "Berlin", "Merkel", "Scholz", "Bundesliga",
+        "Frankfurt", "Munich", "Bundestag", "Deutsche Bank"
+    ],
+    "France": [
+        "France", "French", "Paris", "Macron", "Eiffel Tower", "Le Pen",
+        "Marseille", "Ligue 1", "Elysée Palace"
+    ],
+    "Japan": [
+        "Japan", "Japanese", "Tokyo", "Kyoto", "Kishida", "Yen", "Nintendo", "Sony",
+        "Toyota", "Nikkei", "Diet"
+    ],
+    "Brazil": [
+        "Brazil", "Brazilian", "Brasília", "Rio de Janeiro", "São Paulo",
+        "Lula da Silva", "Amazon rainforest", "Bolsonaro"
+    ],
+    "South Africa": [
+        "South Africa", "South African", "Pretoria", "Cape Town", "Johannesburg",
+        "Ramaphosa", "ANC", "Apartheid", "Rand"
+    ],
+    "Israel": [
+        "Israel", "Israeli", "Jerusalem", "Tel Aviv", "Netanyahu", "Knesset",
+        "Gaza", "West Bank", "IDF", "Mossad", "Palestine", "Palestinian"
+    ],
+    "Iran": [
+        "Iran", "Iranian", "Tehran", "Khamenei", "Persian", "IRGC", "Rial"
+    ],
+    "Saudi Arabia": [
+        "Saudi Arabia", "Saudi", "Riyadh", "Mecca", "MBS", "Mohammed bin Salman",
+        "Aramco", "OPEC"
+    ],
+    "Nigeria": [
+        "Nigeria", "Nigerian", "Abuja", "Lagos", "Boko Haram", "Naira"
+    ],
+    "Mexico": [
+        "Mexico", "Mexican", "Mexico City", "Tijuana", "Cancun", "Cartel", "Peso"
+    ],
+    "South Korea": [
+        "South Korea", "Korean", "Seoul", "Samsung", "Hyundai", "K-Pop", "DMZ",
+        "Yoon Suk Yeol"
+    ],
+    "Turkey": [
+        "Turkey", "Turkish", "Ankara", "Istanbul", "Erdogan", "Lira", "Anatolia"
+    ]
+}
+
+# --- Category Keyword Dictionary ---
+# A dictionary used to automatically detect the category of an article as a backup.
+key_word_category = {
+    "Politics": [
+        "election", "government", "parliament", "vote", "political", "policy",
+        "White House", "Downing Street", "senate", "congress", "law", "bill",
+        "president", "prime minister", "chancellor", "treaty", "diplomacy",
+        "Democrat", "Republican", "Conservative", "Labour", "legislation"
+    ],
+    "Business": [
+        "business", "economy", "market", "stock", "shares", "nasdaq", "dow jones",
+        "company", "corporate", "finance", "earnings", "revenue", "profit",
+        "inflation", "interest rate", "CEO", "IPO", "merger", "acquisition",
+        "investment", "trade", "commerce", "fiscal"
+    ],
+    "Technology": [
+        "technology", "tech", "AI", "artificial intelligence", "smartphone", "Apple",
+        "Google", "Microsoft", "Amazon", "Meta", "Facebook", "software", "hardware",
+        "internet", "startup", "iPhone", "Android", "semiconductor", "chip",
+        "data center", "cybersecurity", "app", "platform"
+    ],
+    "Sports": [
+        "sports", "football", "basketball", "soccer", "tennis", "cricket", "olympics",
+        "world cup", "championship", "league", "match", "game", "player", "team",
+        "NBA", "NFL", "Premier League", "MLB", "NHL", "athlete", "score", "stadium"
+    ],
+    "Health": [
+        "health", "medicine", "hospital", "doctor", "NHS", "CDC", "WHO", "pandemic",
+        "virus", "vaccine", "disease", "treatment", "mental health", "healthcare",
+        "pharma", "clinical trial", "medical"
+    ],
+    "Science": [
+        "science", "research", "study", "discovery", "space", "NASA", "ESA",
+        "physics", "chemistry", "biology", "astronomy", "particle", "quantum",
+        "genetics", "archaeology", "geology"
+    ],
+    "Environment": [
+        "environment", "climate change", "global warming", "carbon emissions",
+        "renewable energy", "solar", "wind", "conservation", "pollution",
+        "endangered species", "sustainability", "COP28"
+    ],
+    "Entertainment": [
+        "entertainment", "movie", "film", "TV", "television", "music", "album",
+        "song", "concert", "celebrity", "Hollywood", "Bollywood", "actor",
+        "actress", "box office", "Netflix", "Disney", "Grammys", "Oscars"
+    ],
+    "Culture": [
+        "culture", "art", "museum", "exhibit", "theatre", "literature", "book",
+        "author", "heritage", "tradition", "fashion", "food", "cuisine"
+    ],
+    "Conflict": [
+        "conflict", "war", "battle", "military", "troops", "invasion", "airstrike",
+        "ceasefire", "insurgency", "refugee", "humanitarian crisis"
+    ],
+    "Legal": [
+        "legal", "court", "supreme court", "lawsuit", "trial", "verdict",
+        "prosecutor", "judge", "attorney", "justice department"
+    ]
+}

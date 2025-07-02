@@ -79,7 +79,7 @@ def fetch_historical_documents(url, start_date, end_date):
 
         # Pause between request to stop rate limiting and maximum requests
         logger.info("Pausing for 3 seconds...")
-        time.sleep(3)
+        time.sleep(config.time)
 
     logger.info(f"Finished processing {snapshot_count} snapshots for {url}.")
     return all_found_items

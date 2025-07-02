@@ -74,10 +74,27 @@ def process_item(item, source, pre_defined_country, pre_defined_category):
     # Create combined text for NLP analysis
     text_for_analysis = f"{title}. {description_clean}"
 
-    # Define our candidate categories for the model to choose from.
-    candidate_categories = config.candidate_categories
-    detected_category = pre_defined_category if pre_defined_category else spacy_detect.detect_category_zero_shot(text_for_analysis, candidate_categories)
-    detected_country = pre_defined_country if pre_defined_country else spacy_detect.detect_country_ner(text_for_analysis)
+    # Fallback system using keywords
+    detected_country = pre_defined_country
+    if not detected_country:
+        detected_country = spacy_detect.detect_country_ner(text_for_analysis)
+        
+        # 3. If the NLP model returns "Unknown", THEN fall back to our keyword search.
+        if detected_country == "Unknown":
+            logger.debug(f"NLP country detection failed for '{title[:30]}...'. Falling back to keyword search.")
+            detected_country = detect_country_keywords(title, description_clean)
+
+    # --- Category Detection (can also use a fallback if desired) ---
+    detected_category = pre_defined_category
+    if not detected_category:
+        # Assumes you have a list named 'candidate_categories' in your config.py
+        candidate_categories = config.candidate_categories
+        detected_category = spacy_detect.detect_category_zero_shot(text_for_analysis, candidate_categories)
+
+        if detected_category == "General":
+            logger.debug(f"NLP category detection failed for '{title[:30]}...'. Falling back to keyword search.")
+            detected_category = detect_category_keywords(title, description_clean)
+        # You could add a keyword fallback for category here as well if needed.
 
     raw_date = item.find("pubDate").text.strip() if item.find("pubDate") else ""
     normalized_date = normalize_date_format(raw_date)
@@ -141,3 +158,25 @@ def normalize_date_format(date_string):
         # If the date string is un-parseable, log a warning and return it as is.
         logger.warning(f"Could not parse date: '{date_string}'. Leaving as is.")
         return date_string
+
+def detect_country_keywords(title, description):
+    """
+    This is the original keyword-based country detection, now used as a fallback.
+    """
+    content = f"{title} {description}".lower()
+    for country, keywords in config.key_word_country.items():
+        if any(keyword.lower() in content for keyword in keywords):
+            logger.debug(f"Keyword fallback found country: '{country}'")
+            return country
+    return "Unknown"
+
+def detect_category_keywords(title, description):
+    """
+    This is the original keyword-based category detection, now used as a fallback.
+    """
+    content = f"{title} {description}".lower()
+    for category, keywords in config.key_word_category.items():
+        if any(keyword.lower() in content for keyword in keywords):
+            logger.debug(f"Keyword fallback found country: '{category}'")
+            return category
+    return "General"
