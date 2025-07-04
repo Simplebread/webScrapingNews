@@ -1,6 +1,6 @@
 # INSTRUCTIONS TO RUN
 # RUN THIS TO EXECUTE CRON JOB
-# 0 * * * * /usr/bin/python3 /path/to/your/run_scraper.py >> /path/to/logfile.log 2>&1
+# */2 * * * * /usr/bin/python3 /path/to/your/run_scraper.py
 
 # scheduler.py
 import schedule
@@ -27,7 +27,7 @@ def job():
         logging.error(f"run_scraper.py failed: {e}")
 
 # Schedule it: every hour (change to your needs)
-schedule.every().hour.do(job)
+schedule.every(2).minutes.do(job)
 
 while True:
     schedule.run_pending()

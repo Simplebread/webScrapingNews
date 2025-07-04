@@ -31,10 +31,7 @@ def fetch_historical_documents(url, start_date, end_date):
     logger.info(f"Searching for snapshots of '{url}' from {start_date} to {end_date}")
 
     # --- Client Setup ---
-    # 1. Initialize the Wayback Machine client.
     client = wayback.WaybackClient()
-    # 2. Set a browser-like User-Agent on the client's underlying session.
-    # This is the correct way to set headers for this specific library.
     client.session.headers['User-Agent'] = config.user_agent['User-Agent']
 
     # --- API Search ---

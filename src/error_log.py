@@ -4,9 +4,7 @@
 # FILE OVERVIEW:
 # This is a crucial utility module for the entire project. Its single purpose is
 # to create and configure a standardized logger. Any other file in the project
-# can call the `setup_logger` function to get a logger that behaves consistently,
-# writing messages to both the console and a daily log file. This centralized
-# approach is much better than configuring logging in every single file.
+# can call the `setup_logger` function to get a logger that behaves consistently
 # ========================================================================================
 
 # Import necessary libraries

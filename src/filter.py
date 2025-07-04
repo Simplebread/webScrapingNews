@@ -71,6 +71,8 @@ def process_item(item, source, pre_defined_country, pre_defined_category):
     soup = BeautifulSoup(description_raw, "html.parser")
     description_clean = soup.get_text(separator=" ", strip=True)
 
+    url = item.find("link").text.strip() if item.find("link") else ""
+
     # Create combined text for NLP analysis
     text_for_analysis = f"{title}. {description_clean}"
 
@@ -104,7 +106,7 @@ def process_item(item, source, pre_defined_country, pre_defined_category):
         "title": title,
         "description": description_clean,
         "date": normalized_date,
-        "url": item.find("link").text.strip() if item.find("link") else "",
+        "url": url,
         "source": source,
         "country": detected_country,
         "category": detected_category

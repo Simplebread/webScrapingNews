@@ -1,0 +1,10 @@
+2025-07-05 00:07:09,762 - INFO - Running scheduler for automation.
+2025-07-05 00:08:19,297 - INFO - Running scheduler for automation.
+2025-07-05 00:10:23,583 - INFO - spaCy NLP model 'en_core_web_sm' loaded successfully.
+2025-07-05 00:10:29,361 - INFO - Hugging Face Zero-Shot Classification model loaded successfully.
+2025-07-05 00:10:30,339 - INFO - Running filter on new RSS feed and Wayback Machine snapshots.
+2025-07-05 00:10:31,566 - INFO - Running data base creation and csv exportation.
+2025-07-05 00:10:31,566 - DEBUG - Fetching: https://feeds.bbci.co.uk/news/uk/rss.xml
+2025-07-05 00:10:31,566 - INFO - Fetching live RSS feed from: https://feeds.bbci.co.uk/news/uk/rss.xml
+2025-07-05 00:10:33,898 - DEBUG - Detected category: Business (Score: 0.21)
+2025-07-05 00:10:33,898 - DEBUG - NLP category detection failed for 'BBC on French beach as police ...'. Falling back to keyword search.
