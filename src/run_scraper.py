@@ -14,6 +14,7 @@ import config
 import filter
 import data_base
 from error_log import setup_logger
+import time  # Import the time module for measuring run time
 
 # --- Initial Setup ---
 
@@ -23,6 +24,8 @@ logger = setup_logger(__name__)
 # This list will hold all the news articles collected from all sources.
 all_news = []
 
+# Record the start time
+start_time = time.time()
 
 # --- Main Application Loop ---
 
@@ -54,15 +57,13 @@ for feed in config.rss_feeds:
     except Exception as e:
         # A general catch-all to ensure that if one feed fails completely,
         # the entire program doesn't crash. It logs the error and moves to the next feed.
-        logger.error(f"A critical error occurred while processing the feed {feed['ur' \
-        'l']}: {str(e)}")
+        logger.error(f"A critical error occurred while processing the feed {feed['url']}: {str(e)}")
 
 
 # --- Final Data Processing ---
 
 # After looping through all feeds, remove any duplicate articles from the entire collection.
 all_news = filter.detect_duplicate(all_news)
-
 
 # --- Database and Export ---
 
@@ -72,3 +73,12 @@ logger.info(f"Total unique items collected from all sources: {len(all_news)}")
 # Pass the final, clean list of articles to the database module to be saved.
 data_base.upload_data_base(all_news)
 logger.info("Scraping process completed successfully.")
+
+# Record the end time
+end_time = time.time()
+
+# Calculate the total run time
+total_run_time = end_time - start_time
+
+# Log the total run time
+logger.info(f"Total run time for the scraper: {total_run_time:.2f} seconds")

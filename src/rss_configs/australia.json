@@ -1,0 +1,20 @@
+[
+  {
+    "url": "https://www.abc.net.au/news/feed/2942460/rss.xml",
+    "country": "Australia",
+    "source": "ABC Australia",
+    "category": null
+  },
+  {
+    "url": "https://www.abc.net.au/news/feed/45924/rss.xml",
+    "country": "Australia",
+    "source": "ABC Australia",
+    "category": null
+  },
+  {
+    "url": "https://www.abc.net.au/local/rss/sydney/news.xml",
+    "country": "Australia",
+    "source": "ABC Australia",
+    "category": null
+  }
+]

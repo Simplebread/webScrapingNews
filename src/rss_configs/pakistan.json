@@ -1,0 +1,20 @@
+[
+  {
+    "url": "https://www.dawn.com/feeds/home",
+    "country": "Pakistan",
+    "source": "Dawn",
+    "category": null
+  },
+  {
+    "url": "https://www.nation.com.pk/rss/national",
+    "country": "Pakistan",
+    "source": "The Nation",
+    "category": null
+  },
+  {
+    "url": "https://www.nation.com.pk/rss/editors-picks",
+    "country": "Pakistan",
+    "source": "The Nation",
+    "category": null
+  }
+]

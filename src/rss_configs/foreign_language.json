@@ -1,0 +1,50 @@
+[
+  {
+    "url": "http://www.chinanews.com/rss/scroll-news.xml",
+    "country": "China",
+    "source": "China News Service",
+    "category": null
+  },
+  {
+    "url": "https://www.stats.gov.cn/sj/zxfb/rss.xml",
+    "country": null,
+    "source": "National Bureau of Statistics",
+    "category": null
+  },
+  {
+    "url": "https://www3.nhk.or.jp/rss/news/cat0.xml",
+    "country": "Japan",
+    "source": "NHK News (日本放送協会)",
+    "category": null
+  },
+  {
+    "url": "https://www.asahi.com/rss/asahi/newsheadlines.rdf",
+    "country": null,
+    "source": "Asahi Shimbun (朝日新聞)",
+    "category": null
+  },
+  {
+    "url": "https://www.chosun.com/arc/outboundfeeds/rss/?outputType=xml",
+    "country": "South Korea",
+    "source": "Chosun Ilbo (조선일보)",
+    "category": null
+  },
+  {
+    "url": "https://koreajoongangdaily.joins.com/xmls/joins",
+    "country": null,
+    "source": "JoongAng Ilbo (중앙일보)",
+    "category": null
+  },
+  {
+    "url": "https://feeds.bbci.co.uk/hindi/rss.xml",
+    "country": "India",
+    "source": "BBC Hindi",
+    "category": null
+  },
+  {
+    "url": "https://www.abplive.com/news/india/feed",
+    "country": null,
+    "source": "ABP Live",
+    "category": null
+  }
+]

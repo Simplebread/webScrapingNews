@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://www.straitstimes.com/news/singapore/rss.xml",
+    "country": "Singapore",
+    "source": "The Straits Times",
+    "category": null
+  },
+  {
+    "url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=10416",
+    "country": "Singapore",
+    "source": "Channel News Asia",
+    "category": null
+  }
+]

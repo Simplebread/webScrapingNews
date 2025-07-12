@@ -1,0 +1,80 @@
+{
+    "United States": [
+        "US", "U.S.", "USA", "America", "American", "Washington D.C.", "White House",
+        "Congress", "Senate", "Pentagon", "New York", "California", "Texas", "Florida",
+        "Biden", "Trump", "Federal Reserve", "FBI", "CIA", "NASDAQ", "Wall Street"
+    ],
+    "United Kingdom": [
+        "UK", "U.K.", "Britain", "British", "England", "London", "Scotland", "Wales",
+        "Northern Ireland", "Parliament", "Downing Street", "NHS", "Sunak", "Starmer",
+        "Brexit", "Westminster", "Bank of England"
+    ],
+    "Canada": [
+        "Canada", "Canadian", "Ottawa", "Toronto", "Vancouver", "Montreal", "Quebec",
+        "Trudeau", "Parliament Hill", "RCMP"
+    ],
+    "Australia": [
+        "Australia", "Australian", "Canberra", "Sydney", "Melbourne", "Aussie",
+        "Albanese", "Down Under", "ASX"
+    ],
+    "China": [
+        "China", "Chinese", "Beijing", "Shanghai", "Xi Jinping", "CCP",
+        "Communist Party", "Yuan", "Hong Kong", "Taiwan", "Shenzhen", "Huawei"
+    ],
+    "India": [
+        "India", "Indian", "New Delhi", "Mumbai", "Modi", "BJP", "Congress Party",
+        "Bollywood", "Rupee", "Bangalore", "Kolkata"
+    ],
+    "Russia": [
+        "Russia", "Russian", "Moscow", "Kremlin", "Putin", "Siberia", "Gazprom",
+        "Soviet", "St. Petersburg", "FSB", "Rouble"
+    ],
+    "Ukraine": [
+        "Ukraine", "Ukrainian", "Kyiv", "Zelenskyy", "Donbas", "Crimea", "Lviv",
+        "Kharkiv", "Odessa"
+    ],
+    "Germany": [
+        "Germany", "German", "Berlin", "Merkel", "Scholz", "Bundesliga",
+        "Frankfurt", "Munich", "Bundestag", "Deutsche Bank"
+    ],
+    "France": [
+        "France", "French", "Paris", "Macron", "Eiffel Tower", "Le Pen",
+        "Marseille", "Ligue 1", "Elysée Palace"
+    ],
+    "Japan": [
+        "Japan", "Japanese", "Tokyo", "Kyoto", "Kishida", "Yen", "Nintendo", "Sony",
+        "Toyota", "Nikkei", "Diet"
+    ],
+    "Brazil": [
+        "Brazil", "Brazilian", "Brasília", "Rio de Janeiro", "São Paulo",
+        "Lula da Silva", "Amazon rainforest", "Bolsonaro"
+    ],
+    "South Africa": [
+        "South Africa", "South African", "Pretoria", "Cape Town", "Johannesburg",
+        "Ramaphosa", "ANC", "Apartheid", "Rand"
+    ],
+    "Israel": [
+        "Israel", "Israeli", "Jerusalem", "Tel Aviv", "Netanyahu", "Knesset",
+        "Gaza", "West Bank", "IDF", "Mossad", "Palestine", "Palestinian"
+    ],
+    "Iran": [
+        "Iran", "Iranian", "Tehran", "Khamenei", "Persian", "IRGC", "Rial"
+    ],
+    "Saudi Arabia": [
+        "Saudi Arabia", "Saudi", "Riyadh", "Mecca", "MBS", "Mohammed bin Salman",
+        "Aramco", "OPEC"
+    ],
+    "Nigeria": [
+        "Nigeria", "Nigerian", "Abuja", "Lagos", "Boko Haram", "Naira"
+    ],
+    "Mexico": [
+        "Mexico", "Mexican", "Mexico City", "Tijuana", "Cancun", "Cartel", "Peso"
+    ],
+    "South Korea": [
+        "South Korea", "Korean", "Seoul", "Samsung", "Hyundai", "K-Pop", "DMZ",
+        "Yoon Suk Yeol"
+    ],
+    "Turkey": [
+        "Turkey", "Turkish", "Ankara", "Istanbul", "Erdogan", "Lira", "Anatolia"
+    ]
+}

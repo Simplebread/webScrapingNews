@@ -1,0 +1,358 @@
+[
+  {
+    "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+    "source": "BBC",
+    "category": null
+  },
+  {
+    "url": "https://feeds.bbci.co.uk/news/health/rss.xml",
+    "source": "BBC",
+    "category": "Health"
+  },
+  {
+    "url": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml",
+    "source": "BBC",
+    "category": null
+  },
+  {
+    "url": "https://www.cbc.ca/webfeed/rss/rss-canada",
+    "source": "CBC",
+    "category": null
+  },
+  {
+    "url": "https://www.aljazeera.com/xml/rss/all.xml",
+    "source": "Al Jazeera",
+    "category": null
+  },
+  {
+    "url": "https://abcnews.go.com/abcnews/topstories",
+    "source": "ABC",
+    "category": null
+  },
+  {
+    "url": "https://abcnews.go.com/abcnews/technologyheadlines",
+    "source": "ABC",
+    "category": "Technology"
+  },
+  {
+    "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms",
+    "source": "Times of India",
+    "category": null
+  },
+  {
+    "url": "https://rss.dw.com/rdf/rss-en-all",
+    "source": "Deutsche Welle",
+    "category": null
+  },
+  {
+    "url": "https://rss.dw.com/rdf/rss-en-world",
+    "source": "Deutsche Welle",
+    "category": null
+  },
+  {
+    "url": "https://rss.dw.com/rdf/rss-en-eu",
+    "source": "Deutsche Welle",
+    "category": null
+  },
+  {
+    "url": "https://rss.dw.com/xml/rss_en_science",
+    "source": "Deutsche Welle",
+    "category": "Science"
+  },
+  {
+    "url": "https://rss.dw.com/xml/rss_en_environment",
+    "source": "Deutsche Welle",
+    "category": "Environment"
+  },
+  {
+    "url": "https://rss.dw.com/rdf/rss-en-cul",
+    "source": "Deutsche Welle",
+    "category": "Culture"
+  },
+  {
+    "url": "https://rss.dw.com/rdf/rss-en-sports",
+    "source": "Deutsche Welle",
+    "category": "Sports"
+  },
+  {
+    "url": "https://www.straitstimes.com/news/world/rss.xml",
+    "source": "The Straits Times",
+    "category": null
+  },
+  {
+    "url": "https://www.straitstimes.com/news/business/rss.xml",
+    "source": "The Straits Times",
+    "category": "Business"
+  },
+  {
+    "url": "https://www.straitstimes.com/news/sport/rss.xml",
+    "source": "The Straits Times",
+    "category": "Sports"
+  },
+  {
+    "url": "https://www.straitstimes.com/news/life/rss.xml",
+    "source": "The Straits Times",
+    "category": null
+  },
+  {
+    "url": "https://www.batimes.com.ar/feed",
+    "source": "Buenos Aires Times",
+    "category": null
+  },
+  {
+    "url": "https://allafrica.com/tools/headlines/rdf/latest/headlines.rdf",
+    "source": "AllAfrica",
+    "category": null
+  },
+  {
+    "url": "https://www.bangkokpost.com/rss/data/most-recent.xml",
+    "source": "Bangkok Post",
+    "category": null
+  },
+  {
+    "url": "https://www.bangkokpost.com/rss/data/thailand.xml",
+    "source": "Bangkok Post",
+    "category": null
+  },
+  {
+    "url": "https://www.nation.com.pk/rss/lifestyle-entertainment",
+    "source": "The Nation",
+    "category": null
+  },
+  {
+    "url": "https://www.thestar.com.my/rss/News",
+    "source": "The Star",
+    "category": null
+  },
+  {
+    "url": "https://www.scmp.com/rss/3/feed/",
+    "source": "South China Morning Post",
+    "category": null
+  },
+  {
+    "url": "https://www.scmp.com/rss/318214/feed/",
+    "source": "South China Morning Post",
+    "category": null
+  },
+  {
+    "url": "https://www.scmp.com/rss/318216/feed/",
+    "source": "South China Morning Post",
+    "category": null
+  },
+  {
+    "url": "https://www.scmp.com/rss/318215/feed/",
+    "source": "South China Morning Post",
+    "category": null
+  },
+  {
+    "url": "https://www.independent.co.uk/news/rss",
+    "source": "The Independent",
+    "category": null
+  },
+  {
+    "url": "https://www.independent.co.uk/rss",
+    "source": "The Independent",
+    "category": null
+  },
+  {
+    "url": "https://www.independent.co.uk/news/world/rss",
+    "source": "The Independent",
+    "category": null
+  },
+  {
+    "url": "https://www.independent.co.uk/news/uk/politics/rss",
+    "source": "The Independent",
+    "category": "Politics"
+  },
+  {
+    "url": "https://www.independent.co.uk/voices/rss",
+    "source": "The Independent",
+    "category": null
+  },
+  {
+    "url": "https://www.independent.co.uk/sport/rss",
+    "source": "The Independent",
+    "category": "Sports"
+  },
+  {
+    "url": "https://www.independent.co.uk/arts-entertainment/rss",
+    "source": "The Independent",
+    "category": "Entertainment"
+  },
+  {
+    "url": "https://www.independent.co.uk/tech/rss",
+    "source": "The Independent",
+    "category": "Technology"
+  },
+  {
+    "url": "https://www.dailymail.co.uk/home/index.rss",
+    "source": "Daily Mail",
+    "category": null
+  },
+  {
+    "url": "https://www.dailymail.co.uk/news/index.rss",
+    "source": "Daily Mail",
+    "category": null
+  },
+  {
+    "url": "https://www.dailymail.co.uk/sport/index.rss",
+    "source": "Daily Mail",
+    "category": "Sports"
+  },
+  {
+    "url": "https://www.dailymail.co.uk/tvshowbiz/index.rss",
+    "source": "Daily Mail",
+    "category": null
+  },
+  {
+    "url": "https://www.dailymail.co.uk/health/index.rss",
+    "source": "Daily Mail",
+    "category": "Health"
+  },
+  {
+    "url": "https://www.dailymail.co.uk/sciencetech/index.rss",
+    "source": "Daily Mail",
+    "category": null
+  },
+  {
+    "url": "https://www.dailyrecord.co.uk/rss.xml",
+    "source": "Daily Record",
+    "category": null
+  },
+  {
+    "url": "https://www.thecourier.co.uk/feed/",
+    "source": "The Courier",
+    "category": null
+  },
+  {
+    "url": "https://www.thecourier.co.uk/fp/news/dundee/feed/",
+    "source": "The Courier",
+    "category": null
+  },
+  {
+    "url": "https://www.thecourier.co.uk/fp/news/perth-kinross/feed/",
+    "source": "The Courier",
+    "category": null
+  },
+  {
+    "url": "https://video-api.barrons.com/podcast/rss/barrons/streetwise",
+    "source": "Barron's",
+    "category": null
+  },
+  {
+    "url": "https://www.businesstimes.com.sg/rss/top-stories",
+    "source": "Business Times Singapore",
+    "category": null
+  },
+  {
+    "url": "https://www.businesstimes.com.sg/rss/companies-markets",
+    "source": "Business Times Singapore",
+    "category": null
+  },
+  {
+    "url": "https://www.businesstimes.com.sg/rss/opinion",
+    "source": "Business Times Singapore",
+    "category": null
+  },
+  {
+    "url": "https://www.thehindubusinessline.com/feeder/default.aspx",
+    "source": "BusinessLine Online",
+    "category": null
+  },
+  {
+    "url": "https://www.indiatoday.in/rss",
+    "source": "India Today Online",
+    "category": null
+  },
+  {
+    "url": "https://www.korea.net/Others/Subscribe-to-Koreanet/RSS-Service",
+    "source": "Korea.net",
+    "category": null
+  },
+  {
+    "url": "https://en.yna.co.kr/RSS/news.xml",
+    "source": "Yonhap English News",
+    "category": null
+  },
+  {
+    "url": "https://www.arabnews.com/tags/rss",
+    "source": "Arab News Releases",
+    "category": null
+  },
+  {
+    "url": "https://www.omanobserver.om/feed",
+    "source": "Oman Daily Observer",
+    "category": null
+  },
+  {
+    "url": "https://www.omanobserver.om/oman/feed",
+    "source": "Oman Daily Observer",
+    "category": null
+  },
+  {
+    "url": "https://www.omanobserver.om/business/feed",
+    "source": "Oman Daily Observer",
+    "category": "Business"
+  },
+  {
+    "url": "https://www.prnewswire.com/rss/",
+    "source": "PR Newswire",
+    "category": null
+  },
+  {
+    "url": "https://www.prnewswire.com/rss/news-releases-list.rss",
+    "source": "PR Newswire",
+    "category": null
+  },
+  {
+    "url": "https://www.techradar.com/rss",
+    "source": "TechRadar",
+    "category": null
+  },
+  {
+    "url": "https://www.techradar.com/news/rss",
+    "source": "TechRadar",
+    "category": null
+  },
+  {
+    "url": "https://www.techradar.com/reviews/rss",
+    "source": "TechRadar",
+    "category": null
+  },
+  {
+    "url": "https://wccftech.com/feed/",
+    "source": "Wccftech.com",
+    "category": null
+  },
+  {
+    "url": "https://www.androidheadlines.com/feed",
+    "source": "Android Headlines",
+    "category": null
+  },
+  {
+    "url": "https://www.pcworld.com/feed",
+    "source": "PCWorld",
+    "category": null
+  },
+  {
+    "url": "https://www.t3.com/feed",
+    "source": "T3",
+    "category": null
+  },
+  {
+    "url": "https://cryptodaily.co.uk/feed",
+    "source": "CryptoDaily",
+    "category": null
+  },
+  {
+    "url": "https://ambcrypto.com/feed",
+    "source": "AMBCrypto",
+    "category": null
+  },
+  {
+    "url": "https://www.koreaherald.com/rss/newsAll",
+    "country": null,
+    "source": "The Korea Herald",
+    "category": null
+  }
+]

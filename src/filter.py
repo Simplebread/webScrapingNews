@@ -18,6 +18,7 @@ from error_log import setup_logger
 import historical
 import spacy_detect
 from dateutil.parser import parse as parse_date
+import re
 
 # Setup logger for debugging
 logger = setup_logger(__name__)
@@ -76,15 +77,21 @@ def process_item(item, source, pre_defined_country, pre_defined_category):
     # Create combined text for NLP analysis
     text_for_analysis = f"{title}. {description_clean}"
 
+    lang = spacy_detect.detect_lang(text_for_analysis)
+    if lang!= "en":
+        text_for_analysis = spacy_detect.ensure_english(text_for_analysis)
+    else:
+        text_for_analysis = text_for_analysis
+
     # Fallback system using keywords
     detected_country = pre_defined_country
     if not detected_country:
         detected_country = spacy_detect.detect_country_ner(text_for_analysis)
-        
+
         # 3. If the NLP model returns "Unknown", THEN fall back to our keyword search.
         if detected_country == "Unknown":
             logger.debug(f"NLP country detection failed for '{title[:30]}...'. Falling back to keyword search.")
-            detected_country = detect_country_keywords(title, description_clean)
+            detected_country = detect_country_keywords(text_for_analysis)
 
     # --- Category Detection (can also use a fallback if desired) ---
     detected_category = pre_defined_category
@@ -95,10 +102,16 @@ def process_item(item, source, pre_defined_country, pre_defined_category):
 
         if detected_category == "General":
             logger.debug(f"NLP category detection failed for '{title[:30]}...'. Falling back to keyword search.")
-            detected_category = detect_category_keywords(title, description_clean)
+            detected_category = detect_category_keywords(text_for_analysis)
         # You could add a keyword fallback for category here as well if needed.
 
-    raw_date = item.find("pubDate").text.strip() if item.find("pubDate") else ""
+    if item.find("pubDate"):
+        raw_date = item.find("pubDate").text.strip()
+    elif item.find("dc:date"):
+        raw_date = item.find("dc:date").text.strip()
+    else:
+        raw_date = ""
+
     normalized_date = normalize_date_format(raw_date)
     
     # Assemble the final, clean dictionary for this article.
@@ -161,24 +174,30 @@ def normalize_date_format(date_string):
         logger.warning(f"Could not parse date: '{date_string}'. Leaving as is.")
         return date_string
 
-def detect_country_keywords(title, description):
+def detect_country_keywords(text):
     """
     This is the original keyword-based country detection, now used as a fallback.
     """
-    content = f"{title} {description}".lower()
+    content = f"{text}".lower()
     for country, keywords in config.key_word_country.items():
         if any(keyword.lower() in content for keyword in keywords):
             logger.debug(f"Keyword fallback found country: '{country}'")
             return country
     return "Unknown"
 
-def detect_category_keywords(title, description):
+def detect_category_keywords(text):
     """
-    This is the original keyword-based category detection, now used as a fallback.
+    Safer fallback: Uses strict keyword matching with word boundaries.
+    Prevents false positives like 'tech' in 'protection'.
     """
-    content = f"{title} {description}".lower()
+    content = f"{text}".lower()
+    
     for category, keywords in config.key_word_category.items():
-        if any(keyword.lower() in content for keyword in keywords):
-            logger.debug(f"Keyword fallback found country: '{category}'")
-            return category
+        for keyword in keywords:
+            # Match only whole words or exact keyword phrases
+            pattern = r'\b' + re.escape(keyword.lower()) + r'\b'
+            if re.search(pattern, content):
+                logger.debug(f"Keyword fallback hit on keyword '{keyword}' for category '{category}'")
+                return category
+    
     return "General"

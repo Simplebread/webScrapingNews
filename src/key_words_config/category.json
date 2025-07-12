@@ -1,0 +1,77 @@
+{
+    "Politics": [
+        "politics", "government", "parliament", "political", "policy", "White House",
+        "Downing Street", "senate", "congress", "law", "bill", "president",
+        "prime minister", "chancellor", "treaty", "diplomacy", "Democrat",
+        "Republican", "Conservative", "Labour", "legislation", "lobbyist"
+    ],
+    "Elections": [
+        "election", "vote", "ballot", "poll", "candidate", "campaign",
+        "primary", "debate", "incumbent", "voter", "constituency", "runoff"
+    ],
+    "Business": [
+        "business", "economy", "market", "company", "corporate", "finance", "earnings",
+        "revenue", "profit", "CEO", "IPO", "merger", "acquisition", "investment",
+        "trade", "commerce", "industry", "sector", "stock", "shares", "nasdaq",
+        "dow jones", "wall street", "banking", "interest rate", "Federal Reserve",
+        "ECB", "central bank", "hedge fund", "fiscal", "budget", "inflation"
+    ],
+    "Technology": [
+        "technology", "tech", "AI", "artificial intelligence", "smartphone", "Apple",
+        "Google", "Microsoft", "Amazon", "Meta", "Facebook", "software", "hardware",
+        "internet", "startup", "iPhone", "Android", "semiconductor", "chip",
+        "data center", "cybersecurity", "app", "platform", "algorithm", "encryption"
+    ],
+    "Sports": [
+        "sports", "football", "basketball", "soccer", "tennis", "cricket", "olympics",
+        "world cup", "championship", "league", "match", "game", "player", "team",
+        "NBA", "NFL", "Premier League", "MLB", "NHL", "athlete", "score", "stadium"
+    ],
+    "Health": [
+        "health", "medicine", "hospital", "doctor", "NHS", "CDC", "WHO", "pandemic",
+        "virus", "vaccine", "disease", "treatment", "mental health", "healthcare",
+        "pharma", "clinical trial", "medical", "surgeon", "illness"
+    ],
+    "Science": [
+        "science", "research", "study", "discovery", "space", "NASA", "ESA",
+        "physics", "chemistry", "biology", "astronomy", "particle", "quantum",
+        "genetics", "archaeology", "geology", "experiment", "CERN"
+    ],
+    "Environment": [
+        "environment", "climate change", "global warming", "carbon emissions",
+        "greenhouse gas", "sea level", "ice caps", "COP28", "Paris Agreement",
+        "renewable energy", "solar", "wind", "conservation", "pollution",
+        "endangered species", "sustainability", "deforestation", "ecology", "ecosystem"
+    ],
+    "Entertainment": [
+        "entertainment", "movie", "film", "TV", "television", "music", "album",
+        "song", "concert", "celebrity", "Hollywood", "Bollywood", "actor",
+        "actress", "box office", "Netflix", "Disney", "Grammys", "Oscars", "director"
+    ],
+    "Culture": [
+        "culture", "art", "museum", "exhibit", "theatre", "literature", "book",
+        "author", "heritage", "tradition", "fashion", "food", "cuisine", "lifestyle"
+    ],
+    "Conflict": [
+        "conflict", "war", "battle", "military", "troops", "invasion", "airstrike",
+        "ceasefire", "insurgency", "humanitarian crisis", "artillery", "defense",
+        "defence", "rebellion", "uprising"
+    ],
+    "Legal": [
+        "legal", "court", "supreme court", "lawsuit", "trial", "verdict",
+        "prosecutor", "judge", "attorney", "justice department", "indictment",
+        "appeal", "testimony"
+    ],
+    "Education": [
+        "education", "school", "university", "college", "student", "teacher",
+        "curriculum", "campus", "tuition", "academic", "scholarship"
+    ],
+    "Social Issues": [
+        "social issues", "poverty", "inequality", "homelessness", "social justice",
+        "community", "charity", "non-profit", "gender", "race", "identity"
+    ],
+    "Human Rights": [
+        "human rights", "amnesty international", "activist", "protest", "advocacy",
+        "civil liberties", "freedom of speech", "humanitarian", "asylum"
+    ]
+}

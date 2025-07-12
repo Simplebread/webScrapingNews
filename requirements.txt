@@ -3,9 +3,12 @@ requests==2.32.3
 lxml==5.4.0
 pandas==2.2.3
 schedule==1.2.2
-waybackpy==3.0.6
+wayback==0.4.5
 spacy==3.8.7
 transformers==4.53.0
 torch==2.7.0
 python-dateutil==2.9.0.post0
 pycountry==24.6.1
+langdetect==1.0.9
+sentencepiece==0.2.0
+deep-translator==1.11.4
